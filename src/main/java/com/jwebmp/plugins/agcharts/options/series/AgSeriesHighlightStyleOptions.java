@@ -31,7 +31,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return fill;
     }
 
-    public J setFill(Object fill) {
+    public @org.jspecify.annotations.NonNull J setFill(Object fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -40,7 +40,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
@@ -49,7 +49,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -58,7 +58,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -67,7 +67,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
@@ -76,7 +76,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -85,7 +85,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return lineDashOffset;
     }
 
-    public J setLineDashOffset(Integer lineDashOffset) {
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset) {
         this.lineDashOffset = lineDashOffset;
         return (J) this;
     }
@@ -94,7 +94,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return size;
     }
 
-    public J setSize(Integer size) {
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) {
         this.size = size;
         return (J) this;
     }
@@ -103,7 +103,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
         return opacity;
     }
 
-    public J setOpacity(Double opacity) {
+    public @org.jspecify.annotations.NonNull J setOpacity(Double opacity) {
         this.opacity = opacity;
         return (J) this;
     }

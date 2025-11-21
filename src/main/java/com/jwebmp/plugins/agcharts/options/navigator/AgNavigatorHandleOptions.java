@@ -21,23 +21,23 @@ public class AgNavigatorHandleOptions<J extends AgNavigatorHandleOptions<J>> ext
     private Integer gripLineGap;
 
     public String getFill() { return fill; }
-    public J setFill(String fill) { this.fill = fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(String fill) { this.fill = fill; return (J) this; }
 
     public String getStroke() { return stroke; }
-    public J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
 
     public Integer getWidth() { return width; }
-    public J setWidth(Integer width) { this.width = width; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width) { this.width = width; return (J) this; }
 
     public Integer getHeight() { return height; }
-    public J setHeight(Integer height) { this.height = height; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setHeight(Integer height) { this.height = height; return (J) this; }
 
     public Integer getStrokeWidth() { return strokeWidth; }
-    public J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
 
     public Integer getGripLineLength() { return gripLineLength; }
-    public J setGripLineLength(Integer gripLineLength) { this.gripLineLength = gripLineLength; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setGripLineLength(Integer gripLineLength) { this.gripLineLength = gripLineLength; return (J) this; }
 
     public Integer getGripLineGap() { return gripLineGap; }
-    public J setGripLineGap(Integer gripLineGap) { this.gripLineGap = gripLineGap; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setGripLineGap(Integer gripLineGap) { this.gripLineGap = gripLineGap; return (J) this; }
 }

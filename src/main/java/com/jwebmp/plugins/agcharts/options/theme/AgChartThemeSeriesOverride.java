@@ -20,7 +20,7 @@ public class AgChartThemeSeriesOverride<J extends AgChartThemeSeriesOverride<J>>
         return styler;
     }
 
-    public J setStyler(String styler) {
+    public @org.jspecify.annotations.NonNull J setStyler(String styler) {
         this.styler = styler;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgChartThemeSeriesOverride<J extends AgChartThemeSeriesOverride<J>>
         return highlight;
     }
 
-    public J setHighlight(com.jwebmp.plugins.agcharts.options.series.AgSeriesHighlightOptions<?> highlight) {
+    public @org.jspecify.annotations.NonNull J setHighlight(com.jwebmp.plugins.agcharts.options.series.AgSeriesHighlightOptions<?> highlight) {
         this.highlight = highlight;
         return (J) this;
     }

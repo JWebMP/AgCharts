@@ -19,7 +19,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -28,7 +28,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return xOffset;
     }
 
-    public J setXOffset(Integer xOffset) {
+    public @org.jspecify.annotations.NonNull J setXOffset(Integer xOffset) {
         this.xOffset = xOffset;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return yOffset;
     }
 
-    public J setYOffset(Integer yOffset) {
+    public @org.jspecify.annotations.NonNull J setYOffset(Integer yOffset) {
         this.yOffset = yOffset;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return blur;
     }
 
-    public J setBlur(Integer blur) {
+    public @org.jspecify.annotations.NonNull J setBlur(Integer blur) {
         this.blur = blur;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaS
         return opacity;
     }
 
-    public J setOpacity(Double opacity) {
+    public @org.jspecify.annotations.NonNull J setOpacity(Double opacity) {
         this.opacity = opacity;
         return (J) this;
     }

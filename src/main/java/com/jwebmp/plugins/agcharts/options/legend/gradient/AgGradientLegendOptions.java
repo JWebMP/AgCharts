@@ -17,17 +17,17 @@ public class AgGradientLegendOptions<J extends AgGradientLegendOptions<J>> exten
     private AgGradientLegendScaleOptions<?> scale;
 
     public Boolean getEnabled() {return enabled;}
-    public J setEnabled(Boolean enabled) {this.enabled = enabled;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {this.enabled = enabled;return (J) this;}
 
     public String getPosition() {return position;}
-    public J setPosition(String position) {this.position = position;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setPosition(String position) {this.position = position;return (J) this;}
 
     public Boolean getReverseOrder() {return reverseOrder;}
-    public J setReverseOrder(Boolean reverseOrder) {this.reverseOrder = reverseOrder;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setReverseOrder(Boolean reverseOrder) {this.reverseOrder = reverseOrder;return (J) this;}
 
     public AgGradientLegendGradientOptions<?> getGradient() {return gradient;}
-    public J setGradient(AgGradientLegendGradientOptions<?> gradient) {this.gradient = gradient;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setGradient(AgGradientLegendGradientOptions<?> gradient) {this.gradient = gradient;return (J) this;}
 
     public AgGradientLegendScaleOptions<?> getScale() {return scale;}
-    public J setScale(AgGradientLegendScaleOptions<?> scale) {this.scale = scale;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setScale(AgGradientLegendScaleOptions<?> scale) {this.scale = scale;return (J) this;}
 }

@@ -14,7 +14,7 @@ public class AgTooltipInteractionOptions<J extends AgTooltipInteractionOptions<J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }

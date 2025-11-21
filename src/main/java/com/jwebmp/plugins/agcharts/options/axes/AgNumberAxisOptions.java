@@ -19,7 +19,7 @@ public class AgNumberAxisOptions<J extends AgNumberAxisOptions<J>> extends AgAxi
         return min;
     }
 
-    public J setMin(Double min) {
+    public @org.jspecify.annotations.NonNull J setMin(Double min) {
         this.min = min;
         return (J) this;
     }
@@ -28,7 +28,7 @@ public class AgNumberAxisOptions<J extends AgNumberAxisOptions<J>> extends AgAxi
         return max;
     }
 
-    public J setMax(Double max) {
+    public @org.jspecify.annotations.NonNull J setMax(Double max) {
         this.max = max;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgNumberAxisOptions<J extends AgNumberAxisOptions<J>> extends AgAxi
         return interval;
     }
 
-    public J setInterval(AgAxisNumberIntervalOptions<?> interval) {
+    public @org.jspecify.annotations.NonNull J setInterval(AgAxisNumberIntervalOptions<?> interval) {
         this.interval = interval;
         return (J) this;
     }

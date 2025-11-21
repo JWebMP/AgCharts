@@ -86,97 +86,97 @@ public class AgScatterSeriesOptions<J extends AgScatterSeriesOptions<J>> extends
 
     // --- getters/setters ---
     public String getXKey() { return xKey; }
-    public J setXKey(String xKey) { this.xKey = xKey; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setXKey(String xKey) { this.xKey = xKey; return (J) this; }
 
     public String getYKey() { return yKey; }
-    public J setYKey(String yKey) { this.yKey = yKey; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setYKey(String yKey) { this.yKey = yKey; return (J) this; }
 
     public String getLabelKey() { return labelKey; }
-    public J setLabelKey(String labelKey) { this.labelKey = labelKey; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLabelKey(String labelKey) { this.labelKey = labelKey; return (J) this; }
 
     public String getId() { return id; }
     /** Also sets the base seriesId for consistency. */
-    public J setId(String id) { this.id = id; setSeriesId(id); return (J) this; }
+    public @org.jspecify.annotations.NonNull J setId(String id) { this.id = id; setSeriesId(id); return (J) this; }
 
     public Object getContext() { return context; }
-    public J setContext(Object context) { this.context = context; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setContext(Object context) { this.context = context; return (J) this; }
 
     public List<?> getData() { return data; }
-    public J setData(List<?> data) { this.data = data; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setData(List<?> data) { this.data = data; return (J) this; }
 
     public Boolean getVisible() { return visible; }
-    public J setVisible(Boolean visible) { this.visible = visible; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setVisible(Boolean visible) { this.visible = visible; return (J) this; }
 
     public String getCursor() { return cursor; }
-    public J setCursor(String cursor) { this.cursor = cursor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setCursor(String cursor) { this.cursor = cursor; return (J) this; }
 
     public Object getNodeClickRange() { return nodeClickRange; }
-    public J setNodeClickRange(String range) { this.nodeClickRange = range; return (J) this; }
-    public J setNodeClickRange(Integer pixels) { this.nodeClickRange = pixels; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(String range) { this.nodeClickRange = range; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setNodeClickRange(Integer pixels) { this.nodeClickRange = pixels; return (J) this; }
 
     public Boolean getShowInLegend() { return showInLegend; }
-    public J setShowInLegend(Boolean showInLegend) { this.showInLegend = showInLegend; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShowInLegend(Boolean showInLegend) { this.showInLegend = showInLegend; return (J) this; }
 
     public AgSeriesListeners<?> getListeners() { return listeners; }
-    public J setListeners(AgSeriesListeners<?> listeners) { this.listeners = listeners; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setListeners(AgSeriesListeners<?> listeners) { this.listeners = listeners; return (J) this; }
 
     public String getXName() { return xName; }
-    public J setXName(String xName) { this.xName = xName; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setXName(String xName) { this.xName = xName; return (J) this; }
 
     public String getYName() { return yName; }
-    public J setYName(String yName) { this.yName = yName; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setYName(String yName) { this.yName = yName; return (J) this; }
 
     public String getLabelName() { return labelName; }
-    public J setLabelName(String labelName) { this.labelName = labelName; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLabelName(String labelName) { this.labelName = labelName; return (J) this; }
 
     public String getTitle() { return title; }
-    public J setTitle(String title) { this.title = title; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setTitle(String title) { this.title = title; return (J) this; }
 
     public AgErrorBarOptions<?> getErrorBar() { return errorBar; }
-    public J setErrorBar(AgErrorBarOptions<?> errorBar) { this.errorBar = errorBar; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setErrorBar(AgErrorBarOptions<?> errorBar) { this.errorBar = errorBar; return (J) this; }
 
     public Integer getMaxRenderedItems() { return maxRenderedItems; }
-    public J setMaxRenderedItems(Integer maxRenderedItems) { this.maxRenderedItems = maxRenderedItems; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setMaxRenderedItems(Integer maxRenderedItems) { this.maxRenderedItems = maxRenderedItems; return (J) this; }
 
     public Boolean getShowInMiniChart() { return showInMiniChart; }
-    public J setShowInMiniChart(Boolean showInMiniChart) { this.showInMiniChart = showInMiniChart; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShowInMiniChart(Boolean showInMiniChart) { this.showInMiniChart = showInMiniChart; return (J) this; }
 
     public AgScatterSeriesLabelOptions<?> getLabel() { return label; }
-    public J setLabel(AgScatterSeriesLabelOptions<?> label) { this.label = label; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLabel(AgScatterSeriesLabelOptions<?> label) { this.label = label; return (J) this; }
 
     public Integer getSize() { return size; }
-    public J setSize(Integer size) { this.size = size; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) { this.size = size; return (J) this; }
 
     public String getShapeName() { return shapeName; }
     /** Set a built-in marker shape by name (e.g., "circle"). Clears any custom shape function. */
-    public J setShape(String shapeName) { this.shapeName = shapeName; this.shapeFunction = null; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShape(String shapeName) { this.shapeName = shapeName; this.shapeFunction = null; return (J) this; }
     /** Set a built-in marker shape by enum. Clears any custom shape function. */
-    public J setShape(AgMarkerShape shape) { this.shapeName = shape != null ? shape.toString() : null; this.shapeFunction = null; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShape(AgMarkerShape shape) { this.shapeName = shape != null ? shape.toString() : null; this.shapeFunction = null; return (J) this; }
     /** Provide a custom marker shape function: "function({x,y,path,size}){ ... }" */
-    public J setShapeFunction(String shapeFunction) { this.shapeFunction = shapeFunction; this.shapeName = null; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShapeFunction(String shapeFunction) { this.shapeFunction = shapeFunction; this.shapeName = null; return (J) this; }
     public String getShapeFunction() { return shapeFunction; }
 
     public Object getFill() { return fill; }
-    public J setFill(String fill) { this.fill = (Object) fill; return (J) this; }
-    public J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgGradientColor<?> fill) { this.fill = fill; return (J) this; }
-    public J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgPatternFill<?> fill) { this.fill = fill; return (J) this; }
-    public J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgImageFill<?> fill) { this.fill = fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(String fill) { this.fill = (Object) fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgGradientColor<?> fill) { this.fill = fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgPatternFill<?> fill) { this.fill = fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(com.jwebmp.plugins.agcharts.options.series.fills.AgImageFill<?> fill) { this.fill = fill; return (J) this; }
 
     public Double getFillOpacity() { return fillOpacity; }
-    public J setFillOpacity(Double fillOpacity) { this.fillOpacity = fillOpacity; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) { this.fillOpacity = fillOpacity; return (J) this; }
 
     public String getStroke() { return stroke; }
-    public J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
 
     public Integer getStrokeWidth() { return strokeWidth; }
-    public J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
 
     public Double getStrokeOpacity() { return strokeOpacity; }
-    public J setStrokeOpacity(Double strokeOpacity) { this.strokeOpacity = strokeOpacity; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) { this.strokeOpacity = strokeOpacity; return (J) this; }
 
     public List<Integer> getLineDash() { return lineDash; }
-    public J setLineDash(List<Integer> lineDash) { this.lineDash = lineDash; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) { this.lineDash = lineDash; return (J) this; }
 
     public Integer getLineDashOffset() { return lineDashOffset; }
-    public J setLineDashOffset(Integer lineDashOffset) { this.lineDashOffset = lineDashOffset; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset) { this.lineDashOffset = lineDashOffset; return (J) this; }
 }

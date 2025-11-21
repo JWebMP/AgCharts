@@ -26,23 +26,23 @@ public class AgDonutSeriesLabelOptions<J extends AgDonutSeriesLabelOptions<J>> e
     private String formatter;
 
     public Boolean getEnabled() { return enabled; }
-    public J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
 
     public Integer getFontSize() { return fontSize; }
-    public J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
 
     public String getFontFamily() { return fontFamily; }
-    public J setFontFamily(String fontFamily) { this.fontFamily = fontFamily; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) { this.fontFamily = fontFamily; return (J) this; }
 
     public String getFontWeight() { return fontWeight; }
-    public J setFontWeight(String fontWeight) { this.fontWeight = fontWeight; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) { this.fontWeight = fontWeight; return (J) this; }
 
     public String getColor() { return color; }
-    public J setColor(String color) { this.color = color; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setColor(String color) { this.color = color; return (J) this; }
 
     public Integer getMinAngle() { return minAngle; }
-    public J setMinAngle(Integer minAngle) { this.minAngle = minAngle; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setMinAngle(Integer minAngle) { this.minAngle = minAngle; return (J) this; }
 
     public String getFormatter() { return formatter; }
-    public J setFormatter(String formatter) { this.formatter = formatter; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFormatter(String formatter) { this.formatter = formatter; return (J) this; }
 }

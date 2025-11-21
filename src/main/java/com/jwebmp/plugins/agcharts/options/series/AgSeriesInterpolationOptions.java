@@ -14,7 +14,7 @@ public class AgSeriesInterpolationOptions<J extends AgSeriesInterpolationOptions
         return type;
     }
 
-    public J setType(AgInterpolationType type) {
+    public @org.jspecify.annotations.NonNull J setType(AgInterpolationType type) {
         this.type = type;
         return (J) this;
     }

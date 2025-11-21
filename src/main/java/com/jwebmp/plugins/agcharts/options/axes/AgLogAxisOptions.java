@@ -21,7 +21,7 @@ public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseO
         return base;
     }
 
-    public J setBase(Double base) {
+    public @org.jspecify.annotations.NonNull J setBase(Double base) {
         this.base = base;
         return (J) this;
     }
@@ -30,7 +30,7 @@ public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseO
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -39,7 +39,7 @@ public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseO
         return min;
     }
 
-    public J setMin(Double min) {
+    public @org.jspecify.annotations.NonNull J setMin(Double min) {
         this.min = min;
         return (J) this;
     }
@@ -48,7 +48,7 @@ public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseO
         return max;
     }
 
-    public J setMax(Double max) {
+    public @org.jspecify.annotations.NonNull J setMax(Double max) {
         this.max = max;
         return (J) this;
     }
@@ -57,7 +57,7 @@ public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseO
         return interval;
     }
 
-    public J setInterval(AgAxisLogIntervalOptions<?> interval) {
+    public @org.jspecify.annotations.NonNull J setInterval(AgAxisLogIntervalOptions<?> interval) {
         this.interval = interval;
         return (J) this;
     }

@@ -20,7 +20,7 @@ public class AgChartLegendListeners<J extends AgChartLegendListeners<J>> extends
         return legendItemClick;
     }
 
-    public J setLegendItemClick(String legendItemClick) {
+    public @org.jspecify.annotations.NonNull J setLegendItemClick(String legendItemClick) {
         this.legendItemClick = legendItemClick;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgChartLegendListeners<J extends AgChartLegendListeners<J>> extends
         return legendItemDoubleClick;
     }
 
-    public J setLegendItemDoubleClick(String legendItemDoubleClick) {
+    public @org.jspecify.annotations.NonNull J setLegendItemDoubleClick(String legendItemDoubleClick) {
         this.legendItemDoubleClick = legendItemDoubleClick;
         return (J) this;
     }

@@ -19,7 +19,7 @@ public class AgGroupedCategoryAxisOptions<J extends AgGroupedCategoryAxisOptions
         return depthOptions;
     }
 
-    public J setDepthOptions(List<AgGroupedCategoryDepthOptions<?>> depthOptions) {
+    public @org.jspecify.annotations.NonNull J setDepthOptions(List<AgGroupedCategoryDepthOptions<?>> depthOptions) {
         this.depthOptions = depthOptions;
         return (J) this;
     }

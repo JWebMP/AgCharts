@@ -12,8 +12,8 @@ public class AgDonutTitleOptions<J extends AgDonutTitleOptions<J>> extends JavaS
     private Boolean showInLegend;
 
     public String getText() { return text; }
-    public J setText(String text) { this.text = text; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setText(String text) { this.text = text; return (J) this; }
 
     public Boolean getShowInLegend() { return showInLegend; }
-    public J setShowInLegend(Boolean showInLegend) { this.showInLegend = showInLegend; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShowInLegend(Boolean showInLegend) { this.showInLegend = showInLegend; return (J) this; }
 }

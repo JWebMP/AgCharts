@@ -20,7 +20,7 @@ public class AgSeriesSegmentationOptions<J extends AgSeriesSegmentationOptions<J
         return key;
     }
 
-    public J setKey(AgSegmentationKey key) {
+    public @org.jspecify.annotations.NonNull J setKey(AgSegmentationKey key) {
         this.key = key;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgSeriesSegmentationOptions<J extends AgSeriesSegmentationOptions<J
         return segments;
     }
 
-    public J setSegments(List<AgSeriesShapeSegmentOptions<?>> segments) {
+    public @org.jspecify.annotations.NonNull J setSegments(List<AgSeriesShapeSegmentOptions<?>> segments) {
         this.segments = segments;
         return (J) this;
     }

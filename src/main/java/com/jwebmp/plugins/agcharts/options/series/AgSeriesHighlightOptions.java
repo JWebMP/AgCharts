@@ -28,7 +28,7 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
         return bringToFront;
     }
 
-    public J setBringToFront(Boolean bringToFront) {
+    public @org.jspecify.annotations.NonNull J setBringToFront(Boolean bringToFront) {
         this.bringToFront = bringToFront;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
         return highlightedItem;
     }
 
-    public J setHighlightedItem(AgSeriesHighlightStyleOptions<?> highlightedItem) {
+    public @org.jspecify.annotations.NonNull J setHighlightedItem(AgSeriesHighlightStyleOptions<?> highlightedItem) {
         this.highlightedItem = highlightedItem;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
         return unhighlightedItem;
     }
 
-    public J setUnhighlightedItem(AgSeriesHighlightStyleOptions<?> unhighlightedItem) {
+    public @org.jspecify.annotations.NonNull J setUnhighlightedItem(AgSeriesHighlightStyleOptions<?> unhighlightedItem) {
         this.unhighlightedItem = unhighlightedItem;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
         return highlightedSeries;
     }
 
-    public J setHighlightedSeries(AgSeriesHighlightStyleOptions<?> highlightedSeries) {
+    public @org.jspecify.annotations.NonNull J setHighlightedSeries(AgSeriesHighlightStyleOptions<?> highlightedSeries) {
         this.highlightedSeries = highlightedSeries;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
         return unhighlightedSeries;
     }
 
-    public J setUnhighlightedSeries(AgSeriesHighlightStyleOptions<?> unhighlightedSeries) {
+    public @org.jspecify.annotations.NonNull J setUnhighlightedSeries(AgSeriesHighlightStyleOptions<?> unhighlightedSeries) {
         this.unhighlightedSeries = unhighlightedSeries;
         return (J) this;
     }

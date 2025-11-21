@@ -18,7 +18,7 @@ public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginat
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -27,7 +27,7 @@ public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginat
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -36,7 +36,7 @@ public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginat
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -45,7 +45,7 @@ public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginat
         return size;
     }
 
-    public J setSize(Integer size) {
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) {
         this.size = size;
         return (J) this;
     }
@@ -54,7 +54,7 @@ public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginat
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }

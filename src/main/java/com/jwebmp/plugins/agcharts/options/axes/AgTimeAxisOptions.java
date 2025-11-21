@@ -24,7 +24,7 @@ public class AgTimeAxisOptions<J extends AgTimeAxisOptions<J>> extends AgAxisBas
         return min;
     }
 
-    public J setMin(Date min) {
+    public @org.jspecify.annotations.NonNull J setMin(Date min) {
         this.min = min;
         return (J) this;
     }
@@ -33,7 +33,7 @@ public class AgTimeAxisOptions<J extends AgTimeAxisOptions<J>> extends AgAxisBas
         return max;
     }
 
-    public J setMax(Date max) {
+    public @org.jspecify.annotations.NonNull J setMax(Date max) {
         this.max = max;
         return (J) this;
     }
@@ -42,7 +42,7 @@ public class AgTimeAxisOptions<J extends AgTimeAxisOptions<J>> extends AgAxisBas
         return interval;
     }
 
-    public J setInterval(AgAxisTimeIntervalOptions<?> interval) {
+    public @org.jspecify.annotations.NonNull J setInterval(AgAxisTimeIntervalOptions<?> interval) {
         this.interval = interval;
         return (J) this;
     }
@@ -51,7 +51,7 @@ public class AgTimeAxisOptions<J extends AgTimeAxisOptions<J>> extends AgAxisBas
         return parentLevel;
     }
 
-    public J setParentLevel(AgTimeAxisParentLevel<?> parentLevel) {
+    public @org.jspecify.annotations.NonNull J setParentLevel(AgTimeAxisParentLevel<?> parentLevel) {
         this.parentLevel = parentLevel;
         return (J) this;
     }

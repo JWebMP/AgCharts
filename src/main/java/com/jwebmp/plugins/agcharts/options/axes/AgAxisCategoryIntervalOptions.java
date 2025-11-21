@@ -41,7 +41,7 @@ public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptio
         return step;
     }
 
-    public J setStep(Integer step) {
+    public @org.jspecify.annotations.NonNull J setStep(Integer step) {
         this.step = step;
         return (J) this;
     }
@@ -50,7 +50,7 @@ public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptio
         return values;
     }
 
-    public J setValues(List<String> values) {
+    public @org.jspecify.annotations.NonNull J setValues(List<String> values) {
         this.values = values;
         return (J) this;
     }
@@ -59,7 +59,7 @@ public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptio
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -68,7 +68,7 @@ public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptio
         return maxSpacing;
     }
 
-    public J setMaxSpacing(Integer maxSpacing) {
+    public @org.jspecify.annotations.NonNull J setMaxSpacing(Integer maxSpacing) {
         this.maxSpacing = maxSpacing;
         return (J) this;
     }
@@ -77,7 +77,7 @@ public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptio
         return placement;
     }
 
-    public J setPlacement(AgAxisIntervalPlacement placement) {
+    public @org.jspecify.annotations.NonNull J setPlacement(AgAxisIntervalPlacement placement) {
         this.placement = placement;
         return (J) this;
     }

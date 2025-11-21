@@ -16,7 +16,7 @@ public class AgChartThemeOverrides<J extends AgChartThemeOverrides<J>> extends J
         return bar;
     }
 
-    public J setBar(AgChartThemeSeriesGroupOverride<?> bar) {
+    public @org.jspecify.annotations.NonNull J setBar(AgChartThemeSeriesGroupOverride<?> bar) {
         this.bar = bar;
         return (J) this;
     }
@@ -25,7 +25,7 @@ public class AgChartThemeOverrides<J extends AgChartThemeOverrides<J>> extends J
         return line;
     }
 
-    public J setLine(AgChartThemeSeriesGroupOverride<?> line) {
+    public @org.jspecify.annotations.NonNull J setLine(AgChartThemeSeriesGroupOverride<?> line) {
         this.line = line;
         return (J) this;
     }
@@ -34,7 +34,7 @@ public class AgChartThemeOverrides<J extends AgChartThemeOverrides<J>> extends J
         return area;
     }
 
-    public J setArea(AgChartThemeSeriesGroupOverride<?> area) {
+    public @org.jspecify.annotations.NonNull J setArea(AgChartThemeSeriesGroupOverride<?> area) {
         this.area = area;
         return (J) this;
     }

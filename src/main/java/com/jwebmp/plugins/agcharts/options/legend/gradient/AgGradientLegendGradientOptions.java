@@ -15,8 +15,8 @@ public class AgGradientLegendGradientOptions<J extends AgGradientLegendGradientO
     private Integer preferredLength;
 
     public Integer getThickness() {return thickness;}
-    public J setThickness(Integer thickness) {this.thickness = thickness;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setThickness(Integer thickness) {this.thickness = thickness;return (J) this;}
 
     public Integer getPreferredLength() {return preferredLength;}
-    public J setPreferredLength(Integer preferredLength) {this.preferredLength = preferredLength;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setPreferredLength(Integer preferredLength) {this.preferredLength = preferredLength;return (J) this;}
 }

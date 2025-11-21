@@ -23,7 +23,7 @@ public class AgGradientColor<J extends AgGradientColor<J>> extends JavaScriptPar
         return colorStops;
     }
 
-    public J setColorStops(List<AgGradientColorStop<?>> colorStops) {
+    public @org.jspecify.annotations.NonNull J setColorStops(List<AgGradientColorStop<?>> colorStops) {
         this.colorStops = colorStops;
         return (J) this;
     }
@@ -32,7 +32,7 @@ public class AgGradientColor<J extends AgGradientColor<J>> extends JavaScriptPar
         return rotation;
     }
 
-    public J setRotation(Number rotation) {
+    public @org.jspecify.annotations.NonNull J setRotation(Number rotation) {
         this.rotation = rotation;
         return (J) this;
     }

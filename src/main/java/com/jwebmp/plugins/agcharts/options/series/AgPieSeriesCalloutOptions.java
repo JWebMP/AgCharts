@@ -13,11 +13,11 @@ public class AgPieSeriesCalloutOptions<J extends AgPieSeriesCalloutOptions<J>> e
     private Integer length;
 
     public String getStroke() { return stroke; }
-    public J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
 
     public Integer getStrokeWidth() { return strokeWidth; }
-    public J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
 
     public Integer getLength() { return length; }
-    public J setLength(Integer length) { this.length = length; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLength(Integer length) { this.length = length; return (J) this; }
 }

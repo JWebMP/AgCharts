@@ -21,7 +21,7 @@ public class AgCategoryAxisOptions<J extends AgCategoryAxisOptions<J>> extends A
         return interval;
     }
 
-    public J setInterval(AgAxisCategoryIntervalOptions<?> interval) {
+    public @org.jspecify.annotations.NonNull J setInterval(AgAxisCategoryIntervalOptions<?> interval) {
         this.interval = interval;
         return (J) this;
     }
@@ -30,7 +30,7 @@ public class AgCategoryAxisOptions<J extends AgCategoryAxisOptions<J>> extends A
         return paddingInner;
     }
 
-    public J setPaddingInner(Double paddingInner) {
+    public @org.jspecify.annotations.NonNull J setPaddingInner(Double paddingInner) {
         this.paddingInner = paddingInner;
         return (J) this;
     }
@@ -39,7 +39,7 @@ public class AgCategoryAxisOptions<J extends AgCategoryAxisOptions<J>> extends A
         return paddingOuter;
     }
 
-    public J setPaddingOuter(Double paddingOuter) {
+    public @org.jspecify.annotations.NonNull J setPaddingOuter(Double paddingOuter) {
         this.paddingOuter = paddingOuter;
         return (J) this;
     }
@@ -48,7 +48,7 @@ public class AgCategoryAxisOptions<J extends AgCategoryAxisOptions<J>> extends A
         return groupPaddingInner;
     }
 
-    public J setGroupPaddingInner(Double groupPaddingInner) {
+    public @org.jspecify.annotations.NonNull J setGroupPaddingInner(Double groupPaddingInner) {
         this.groupPaddingInner = groupPaddingInner;
         return (J) this;
     }
@@ -57,7 +57,7 @@ public class AgCategoryAxisOptions<J extends AgCategoryAxisOptions<J>> extends A
         return bandHighlight;
     }
 
-    public J setBandHighlight(AgBandHighlightOptions<?> bandHighlight) {
+    public @org.jspecify.annotations.NonNull J setBandHighlight(AgBandHighlightOptions<?> bandHighlight) {
         this.bandHighlight = bandHighlight;
         return (J) this;
     }

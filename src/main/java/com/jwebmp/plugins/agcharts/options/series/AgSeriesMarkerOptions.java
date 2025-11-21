@@ -53,7 +53,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -63,7 +63,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return size;
     }
 
-    public J setSize(Integer size) {
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) {
         this.size = size;
         return (J) this;
     }
@@ -74,21 +74,21 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
     }
 
     /** Set a built-in marker shape by name (e.g., "circle"). Clears any custom shape function. */
-    public J setShape(String shapeName) {
+    public @org.jspecify.annotations.NonNull J setShape(String shapeName) {
         this.shapeName = shapeName;
         this.shapeFunction = null;
         return (J) this;
     }
 
     /** Set a built-in marker shape by enum. Clears any custom shape function. */
-    public J setShape(AgMarkerShape shape) {
+    public @org.jspecify.annotations.NonNull J setShape(AgMarkerShape shape) {
         this.shapeName = shape != null ? shape.toString() : null;
         this.shapeFunction = null;
         return (J) this;
     }
 
     /** Set a custom marker shape function. Example: "function({x,y,path,size}){ ... }" */
-    public J setShapeFunction(String shapeFunction) {
+    public @org.jspecify.annotations.NonNull J setShapeFunction(String shapeFunction) {
         this.shapeFunction = shapeFunction;
         this.shapeName = null;
         return (J) this;
@@ -104,25 +104,25 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
     }
 
     /** Set a solid CSS color string. */
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = (Object) fill;
         return (J) this;
     }
 
     /** Set a gradient fill object. */
-    public J setFill(AgGradientColor<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgGradientColor<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set a pattern fill object. */
-    public J setFill(AgPatternFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgPatternFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set an image fill object. */
-    public J setFill(AgImageFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgImageFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -131,7 +131,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
@@ -141,7 +141,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -150,7 +150,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -159,7 +159,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
@@ -168,7 +168,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -177,7 +177,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return lineDashOffset;
     }
 
-    public J setLineDashOffset(Integer lineDashOffset) {
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset) {
         this.lineDashOffset = lineDashOffset;
         return (J) this;
     }
@@ -187,7 +187,7 @@ public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends J
         return itemStyler;
     }
 
-    public J setItemStyler(String itemStyler) {
+    public @org.jspecify.annotations.NonNull J setItemStyler(String itemStyler) {
         this.itemStyler = itemStyler;
         return (J) this;
     }

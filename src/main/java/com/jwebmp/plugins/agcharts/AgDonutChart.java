@@ -29,25 +29,25 @@ public class AgDonutChart<J extends AgDonutChart<J>> extends AgChart<J>
     }
 
     /** Optional: attach data directly to the series. */
-    public J setData(List<?> data)
+    public @org.jspecify.annotations.NonNull J setData(List<?> data)
     {
         this.data = data;
         return (J) this;
     }
 
-    public J setCalloutLabelKey(String calloutLabelKey)
+    public @org.jspecify.annotations.NonNull J setCalloutLabelKey(String calloutLabelKey)
     {
         this.calloutLabelKey = calloutLabelKey;
         return (J) this;
     }
 
-    public J setSectorLabelKey(String sectorLabelKey)
+    public @org.jspecify.annotations.NonNull J setSectorLabelKey(String sectorLabelKey)
     {
         this.sectorLabelKey = sectorLabelKey;
         return (J) this;
     }
 
-    public J setLegendItemKey(String legendItemKey)
+    public @org.jspecify.annotations.NonNull J setLegendItemKey(String legendItemKey)
     {
         this.legendItemKey = legendItemKey;
         return (J) this;

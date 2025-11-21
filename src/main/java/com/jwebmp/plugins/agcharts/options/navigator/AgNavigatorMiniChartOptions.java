@@ -14,8 +14,8 @@ public class AgNavigatorMiniChartOptions<J extends AgNavigatorMiniChartOptions<J
     private AgSeriesLabelOptions<?> label;
 
     public Boolean getEnabled() { return enabled; }
-    public J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
 
     public AgSeriesLabelOptions<?> getLabel() { return label; }
-    public J setLabel(AgSeriesLabelOptions<?> label) { this.label = label; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLabel(AgSeriesLabelOptions<?> label) { this.label = label; return (J) this; }
 }

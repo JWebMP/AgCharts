@@ -22,7 +22,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -31,7 +31,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return text;
     }
 
-    public J setText(String text) {
+    public @org.jspecify.annotations.NonNull J setText(String text) {
         this.text = text;
         return (J) this;
     }
@@ -40,7 +40,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return spacing;
     }
 
-    public J setSpacing(Integer spacing) {
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing) {
         this.spacing = spacing;
         return (J) this;
     }
@@ -49,7 +49,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return fontSize;
     }
 
-    public J setFontSize(Integer fontSize) {
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) {
         this.fontSize = fontSize;
         return (J) this;
     }
@@ -58,7 +58,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return fontFamily;
     }
 
-    public J setFontFamily(String fontFamily) {
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) {
         this.fontFamily = fontFamily;
         return (J) this;
     }
@@ -67,7 +67,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return fontWeight;
     }
 
-    public J setFontWeight(String fontWeight) {
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) {
         this.fontWeight = fontWeight;
         return (J) this;
     }
@@ -76,7 +76,7 @@ public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends J
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }

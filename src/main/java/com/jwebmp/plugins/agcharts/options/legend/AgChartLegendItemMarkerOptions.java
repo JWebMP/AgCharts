@@ -19,7 +19,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return size;
     }
 
-    public J setSize(Integer size) {
+    public @org.jspecify.annotations.NonNull J setSize(Integer size) {
         this.size = size;
         return (J) this;
     }
@@ -28,7 +28,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return shape;
     }
 
-    public J setShape(String shape) {
+    public @org.jspecify.annotations.NonNull J setShape(String shape) {
         this.shape = shape;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return padding;
     }
 
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         this.padding = padding;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOpt
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }

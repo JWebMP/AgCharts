@@ -21,7 +21,7 @@ public class AgAxisGridLineOptions<J extends AgAxisGridLineOptions<J>> extends J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -30,7 +30,7 @@ public class AgAxisGridLineOptions<J extends AgAxisGridLineOptions<J>> extends J
         return width;
     }
 
-    public J setWidth(Integer width) {
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width) {
         this.width = width;
         return (J) this;
     }
@@ -39,7 +39,7 @@ public class AgAxisGridLineOptions<J extends AgAxisGridLineOptions<J>> extends J
         return style;
     }
 
-    public J setStyle(List<AgAxisGridStyle<?>> style) {
+    public @org.jspecify.annotations.NonNull J setStyle(List<AgAxisGridStyle<?>> style) {
         this.style = style;
         return (J) this;
     }

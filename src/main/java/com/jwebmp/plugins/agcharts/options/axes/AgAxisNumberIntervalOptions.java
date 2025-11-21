@@ -30,7 +30,7 @@ public class AgAxisNumberIntervalOptions<J extends AgAxisNumberIntervalOptions<J
         return step;
     }
 
-    public J setStep(Number step) {
+    public @org.jspecify.annotations.NonNull J setStep(Number step) {
         this.step = step;
         return (J) this;
     }
@@ -39,7 +39,7 @@ public class AgAxisNumberIntervalOptions<J extends AgAxisNumberIntervalOptions<J
         return values;
     }
 
-    public J setValues(List<Double> values) {
+    public @org.jspecify.annotations.NonNull J setValues(List<Double> values) {
         this.values = values;
         return (J) this;
     }
@@ -48,7 +48,7 @@ public class AgAxisNumberIntervalOptions<J extends AgAxisNumberIntervalOptions<J
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -57,7 +57,7 @@ public class AgAxisNumberIntervalOptions<J extends AgAxisNumberIntervalOptions<J
         return maxSpacing;
     }
 
-    public J setMaxSpacing(Integer maxSpacing) {
+    public @org.jspecify.annotations.NonNull J setMaxSpacing(Integer maxSpacing) {
         this.maxSpacing = maxSpacing;
         return (J) this;
     }

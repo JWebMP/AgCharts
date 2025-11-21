@@ -20,7 +20,7 @@ public class AgSeriesListeners<J extends AgSeriesListeners<J>> extends JavaScrip
         return nodeClick;
     }
 
-    public J setNodeClick(String nodeClick) {
+    public @org.jspecify.annotations.NonNull J setNodeClick(String nodeClick) {
         this.nodeClick = nodeClick;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgSeriesListeners<J extends AgSeriesListeners<J>> extends JavaScrip
         return nodeDoubleClick;
     }
 
-    public J setNodeDoubleClick(String nodeDoubleClick) {
+    public @org.jspecify.annotations.NonNull J setNodeDoubleClick(String nodeDoubleClick) {
         this.nodeDoubleClick = nodeDoubleClick;
         return (J) this;
     }

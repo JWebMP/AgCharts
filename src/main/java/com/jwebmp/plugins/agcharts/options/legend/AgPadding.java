@@ -17,7 +17,7 @@ public class AgPadding<J extends AgPadding<J>> extends JavaScriptPart<J> {
         return top;
     }
 
-    public J setTop(Integer top) {
+    public @org.jspecify.annotations.NonNull J setTop(Integer top) {
         this.top = top;
         return (J) this;
     }
@@ -26,7 +26,7 @@ public class AgPadding<J extends AgPadding<J>> extends JavaScriptPart<J> {
         return right;
     }
 
-    public J setRight(Integer right) {
+    public @org.jspecify.annotations.NonNull J setRight(Integer right) {
         this.right = right;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgPadding<J extends AgPadding<J>> extends JavaScriptPart<J> {
         return bottom;
     }
 
-    public J setBottom(Integer bottom) {
+    public @org.jspecify.annotations.NonNull J setBottom(Integer bottom) {
         this.bottom = bottom;
         return (J) this;
     }
@@ -44,7 +44,7 @@ public class AgPadding<J extends AgPadding<J>> extends JavaScriptPart<J> {
         return left;
     }
 
-    public J setLeft(Integer left) {
+    public @org.jspecify.annotations.NonNull J setLeft(Integer left) {
         this.left = left;
         return (J) this;
     }

@@ -33,12 +33,12 @@ public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> e
         return step;
     }
 
-    public J setStep(AgTimeIntervalUnit unit) {
+    public @org.jspecify.annotations.NonNull J setStep(AgTimeIntervalUnit unit) {
         this.step = unit;
         return (J) this;
     }
 
-    public J setStep(AgTimeInterval interval) {
+    public @org.jspecify.annotations.NonNull J setStep(AgTimeInterval interval) {
         this.step = interval;
         return (J) this;
     }
@@ -47,7 +47,7 @@ public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> e
         return values;
     }
 
-    public J setValues(List<Date> values) {
+    public @org.jspecify.annotations.NonNull J setValues(List<Date> values) {
         this.values = values;
         return (J) this;
     }
@@ -56,7 +56,7 @@ public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> e
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -65,7 +65,7 @@ public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> e
         return maxSpacing;
     }
 
-    public J setMaxSpacing(Integer maxSpacing) {
+    public @org.jspecify.annotations.NonNull J setMaxSpacing(Integer maxSpacing) {
         this.maxSpacing = maxSpacing;
         return (J) this;
     }
@@ -74,7 +74,7 @@ public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> e
         return placement;
     }
 
-    public J setPlacement(AgAxisIntervalPlacement placement) {
+    public @org.jspecify.annotations.NonNull J setPlacement(AgAxisIntervalPlacement placement) {
         this.placement = placement;
         return (J) this;
     }

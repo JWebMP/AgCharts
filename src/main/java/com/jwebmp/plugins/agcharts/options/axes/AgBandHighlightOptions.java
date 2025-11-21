@@ -13,7 +13,7 @@ public class AgBandHighlightOptions<J extends AgBandHighlightOptions<J>> extends
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -22,7 +22,7 @@ public class AgBandHighlightOptions<J extends AgBandHighlightOptions<J>> extends
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -31,7 +31,7 @@ public class AgBandHighlightOptions<J extends AgBandHighlightOptions<J>> extends
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }

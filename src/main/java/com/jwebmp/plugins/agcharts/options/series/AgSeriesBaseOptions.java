@@ -50,7 +50,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return type;
     }
 
-    public J setType(String type) {
+    public @org.jspecify.annotations.NonNull J setType(String type) {
         this.type = type;
         return (J) this;
     }
@@ -59,7 +59,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return seriesId;
     }
 
-    public J setSeriesId(String seriesId) {
+    public @org.jspecify.annotations.NonNull J setSeriesId(String seriesId) {
         this.seriesId = seriesId;
         return (J) this;
     }
@@ -69,25 +69,25 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
     }
 
     /** Set a solid CSS color string. */
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = (Object) fill;
         return (J) this;
     }
 
     /** Set a gradient fill object. */
-    public J setFill(AgGradientColor<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgGradientColor<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set a pattern fill object. */
-    public J setFill(AgPatternFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgPatternFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set an image fill object. */
-    public J setFill(AgImageFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgImageFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -96,7 +96,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return itemStyler;
     }
 
-    public J setItemStyler(String itemStyler) {
+    public @org.jspecify.annotations.NonNull J setItemStyler(String itemStyler) {
         this.itemStyler = itemStyler;
         return (J) this;
     }
@@ -105,7 +105,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return styler;
     }
 
-    public J setStyler(String styler) {
+    public @org.jspecify.annotations.NonNull J setStyler(String styler) {
         this.styler = styler;
         return (J) this;
     }
@@ -114,7 +114,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return label;
     }
 
-    public J setLabel(AgSeriesLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgSeriesLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }
@@ -123,7 +123,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return marker;
     }
 
-    public J setMarker(AgSeriesMarkerOptions<?> marker) {
+    public @org.jspecify.annotations.NonNull J setMarker(AgSeriesMarkerOptions<?> marker) {
         this.marker = marker;
         return (J) this;
     }
@@ -132,7 +132,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return tooltip;
     }
 
-    public J setTooltip(AgSeriesTooltipOptions<?> tooltip) {
+    public @org.jspecify.annotations.NonNull J setTooltip(AgSeriesTooltipOptions<?> tooltip) {
         this.tooltip = tooltip;
         return (J) this;
     }
@@ -141,7 +141,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return segmentation;
     }
 
-    public J setSegmentation(AgSeriesSegmentationOptions<?> segmentation) {
+    public @org.jspecify.annotations.NonNull J setSegmentation(AgSeriesSegmentationOptions<?> segmentation) {
         this.segmentation = segmentation;
         return (J) this;
     }
@@ -150,7 +150,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return highlight;
     }
 
-    public J setHighlight(AgSeriesHighlightOptions<?> highlight) {
+    public @org.jspecify.annotations.NonNull J setHighlight(AgSeriesHighlightOptions<?> highlight) {
         this.highlight = highlight;
         return (J) this;
     }

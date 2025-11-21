@@ -37,7 +37,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return url;
     }
 
-    public J setUrl(String url) {
+    public @org.jspecify.annotations.NonNull J setUrl(String url) {
         this.url = url;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return fit;
     }
 
-    public J setFit(AgImageFit fit) {
+    public @org.jspecify.annotations.NonNull J setFit(AgImageFit fit) {
         this.fit = fit;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return width;
     }
 
-    public J setWidth(Integer width) {
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width) {
         this.width = width;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return height;
     }
 
-    public J setHeight(Integer height) {
+    public @org.jspecify.annotations.NonNull J setHeight(Integer height) {
         this.height = height;
         return (J) this;
     }
@@ -73,7 +73,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return repeat;
     }
 
-    public J setRepeat(String repeat) {
+    public @org.jspecify.annotations.NonNull J setRepeat(String repeat) {
         this.repeat = repeat;
         return (J) this;
     }
@@ -82,7 +82,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return backgroundFill;
     }
 
-    public J setBackgroundFill(String backgroundFill) {
+    public @org.jspecify.annotations.NonNull J setBackgroundFill(String backgroundFill) {
         this.backgroundFill = backgroundFill;
         return (J) this;
     }
@@ -91,7 +91,7 @@ public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {
         return backgroundFillOpacity;
     }
 
-    public J setBackgroundFillOpacity(Double backgroundFillOpacity) {
+    public @org.jspecify.annotations.NonNull J setBackgroundFillOpacity(Double backgroundFillOpacity) {
         this.backgroundFillOpacity = backgroundFillOpacity;
         return (J) this;
     }

@@ -41,7 +41,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -51,13 +51,13 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
     }
 
     /** Set a simple preset position string, e.g., "bottom", "right-top". */
-    public J setPosition(String position) {
+    public @org.jspecify.annotations.NonNull J setPosition(String position) {
         this.position = position;
         return (J) this;
     }
 
     /** Set an advanced position object with floating and offsets. */
-    public J setPosition(AgChartLegendPositionOptions<?> position) {
+    public @org.jspecify.annotations.NonNull J setPosition(AgChartLegendPositionOptions<?> position) {
         this.position = position;
         return (J) this;
     }
@@ -66,7 +66,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return orientation;
     }
 
-    public J setOrientation(AgChartLegendOrientation orientation) {
+    public @org.jspecify.annotations.NonNull J setOrientation(AgChartLegendOrientation orientation) {
         this.orientation = orientation;
         return (J) this;
     }
@@ -75,7 +75,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return maxWidth;
     }
 
-    public J setMaxWidth(Integer maxWidth) {
+    public @org.jspecify.annotations.NonNull J setMaxWidth(Integer maxWidth) {
         this.maxWidth = maxWidth;
         return (J) this;
     }
@@ -84,7 +84,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return maxHeight;
     }
 
-    public J setMaxHeight(Integer maxHeight) {
+    public @org.jspecify.annotations.NonNull J setMaxHeight(Integer maxHeight) {
         this.maxHeight = maxHeight;
         return (J) this;
     }
@@ -93,7 +93,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return border;
     }
 
-    public J setBorder(AgLegendBorderOptions<?> border) {
+    public @org.jspecify.annotations.NonNull J setBorder(AgLegendBorderOptions<?> border) {
         this.border = border;
         return (J) this;
     }
@@ -102,7 +102,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return cornerRadius;
     }
 
-    public J setCornerRadius(Integer cornerRadius) {
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius) {
         this.cornerRadius = cornerRadius;
         return (J) this;
     }
@@ -111,13 +111,13 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return padding;
     }
 
-    public J setPadding(AgPadding<?> padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(AgPadding<?> padding) {
         this.padding = padding;
         return (J) this;
     }
 
     /** Convenience overload to set uniform padding for all sides. */
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         AgPadding<?> p = new AgPadding<>().setTop(padding).setRight(padding).setBottom(padding).setLeft(padding);
         this.padding = p;
         return (J) this;
@@ -127,7 +127,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return spacing;
     }
 
-    public J setSpacing(Integer spacing) {
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing) {
         this.spacing = spacing;
         return (J) this;
     }
@@ -136,7 +136,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return item;
     }
 
-    public J setItem(AgChartLegendItemOptions<?> item) {
+    public @org.jspecify.annotations.NonNull J setItem(AgChartLegendItemOptions<?> item) {
         this.item = item;
         return (J) this;
     }
@@ -145,7 +145,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return reverseOrder;
     }
 
-    public J setReverseOrder(Boolean reverseOrder) {
+    public @org.jspecify.annotations.NonNull J setReverseOrder(Boolean reverseOrder) {
         this.reverseOrder = reverseOrder;
         return (J) this;
     }
@@ -154,7 +154,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return listeners;
     }
 
-    public J setListeners(AgChartLegendListeners<?> listeners) {
+    public @org.jspecify.annotations.NonNull J setListeners(AgChartLegendListeners<?> listeners) {
         this.listeners = listeners;
         return (J) this;
     }
@@ -163,7 +163,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return pagination;
     }
 
-    public J setPagination(AgChartLegendPaginationOptions<?> pagination) {
+    public @org.jspecify.annotations.NonNull J setPagination(AgChartLegendPaginationOptions<?> pagination) {
         this.pagination = pagination;
         return (J) this;
     }
@@ -172,7 +172,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return preventHidingAll;
     }
 
-    public J setPreventHidingAll(Boolean preventHidingAll) {
+    public @org.jspecify.annotations.NonNull J setPreventHidingAll(Boolean preventHidingAll) {
         this.preventHidingAll = preventHidingAll;
         return (J) this;
     }
@@ -181,7 +181,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return toggleSeries;
     }
 
-    public J setToggleSeries(Boolean toggleSeries) {
+    public @org.jspecify.annotations.NonNull J setToggleSeries(Boolean toggleSeries) {
         this.toggleSeries = toggleSeries;
         return (J) this;
     }
@@ -190,7 +190,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -199,7 +199,7 @@ public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends Jav
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }

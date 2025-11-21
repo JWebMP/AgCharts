@@ -153,8 +153,8 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
         addAttribute("[options]", "chartOptions()");
         addAttribute("*ngIf", "chartReady() && chartOptions()");
 
-        addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';"));
-        addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';"));
+        addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';",false,true));
+        addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';",false,true));
         registerWebSocketListeners();
     }
 

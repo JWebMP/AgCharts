@@ -17,7 +17,7 @@ public class AgChartThemePalette<J extends AgChartThemePalette<J>> extends JavaS
         return fills;
     }
 
-    public J setFills(List<String> fills) {
+    public @org.jspecify.annotations.NonNull J setFills(List<String> fills) {
         this.fills = fills;
         return (J) this;
     }
@@ -26,7 +26,7 @@ public class AgChartThemePalette<J extends AgChartThemePalette<J>> extends JavaS
         return strokes;
     }
 
-    public J setStrokes(List<String> strokes) {
+    public @org.jspecify.annotations.NonNull J setStrokes(List<String> strokes) {
         this.strokes = strokes;
         return (J) this;
     }

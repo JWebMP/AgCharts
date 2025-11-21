@@ -39,7 +39,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return type;
     }
 
-    public J setType(String type) {
+    public @org.jspecify.annotations.NonNull J setType(String type) {
         this.type = type;
         return (J) this;
     }
@@ -48,7 +48,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return position;
     }
 
-    public J setPosition(AgCartesianAxisPosition position) {
+    public @org.jspecify.annotations.NonNull J setPosition(AgCartesianAxisPosition position) {
         this.position = position;
         return (J) this;
     }
@@ -57,7 +57,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return keys;
     }
 
-    public J setKeys(List<String> keys) {
+    public @org.jspecify.annotations.NonNull J setKeys(List<String> keys) {
         this.keys = keys;
         return (J) this;
     }
@@ -66,7 +66,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return reverse;
     }
 
-    public J setReverse(Boolean reverse) {
+    public @org.jspecify.annotations.NonNull J setReverse(Boolean reverse) {
         this.reverse = reverse;
         return (J) this;
     }
@@ -75,7 +75,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return nice;
     }
 
-    public J setNice(Boolean nice) {
+    public @org.jspecify.annotations.NonNull J setNice(Boolean nice) {
         this.nice = nice;
         return (J) this;
     }
@@ -84,7 +84,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return thickness;
     }
 
-    public J setThickness(Integer thickness) {
+    public @org.jspecify.annotations.NonNull J setThickness(Integer thickness) {
         this.thickness = thickness;
         return (J) this;
     }
@@ -93,7 +93,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return maxThicknessRatio;
     }
 
-    public J setMaxThicknessRatio(Double maxThicknessRatio) {
+    public @org.jspecify.annotations.NonNull J setMaxThicknessRatio(Double maxThicknessRatio) {
         this.maxThicknessRatio = maxThicknessRatio;
         return (J) this;
     }
@@ -102,7 +102,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return title;
     }
 
-    public J setTitle(AgAxisCaptionOptions<?> title) {
+    public @org.jspecify.annotations.NonNull J setTitle(AgAxisCaptionOptions<?> title) {
         this.title = title;
         return (J) this;
     }
@@ -111,7 +111,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return crosshair;
     }
 
-    public J setCrosshair(AgCrosshairOptions<?> crosshair) {
+    public @org.jspecify.annotations.NonNull J setCrosshair(AgCrosshairOptions<?> crosshair) {
         this.crosshair = crosshair;
         return (J) this;
     }
@@ -120,7 +120,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return context;
     }
 
-    public J setContext(Object context) {
+    public @org.jspecify.annotations.NonNull J setContext(Object context) {
         this.context = context;
         return (J) this;
     }
@@ -129,7 +129,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return line;
     }
 
-    public J setLine(AgAxisLineOptions<?> line) {
+    public @org.jspecify.annotations.NonNull J setLine(AgAxisLineOptions<?> line) {
         this.line = line;
         return (J) this;
     }
@@ -138,7 +138,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return gridLine;
     }
 
-    public J setGridLine(AgAxisGridLineOptions<?> gridLine) {
+    public @org.jspecify.annotations.NonNull J setGridLine(AgAxisGridLineOptions<?> gridLine) {
         this.gridLine = gridLine;
         return (J) this;
     }
@@ -147,7 +147,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return label;
     }
 
-    public J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }
@@ -156,7 +156,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return tick;
     }
 
-    public J setTick(AgAxisBaseTickOptions<?> tick) {
+    public @org.jspecify.annotations.NonNull J setTick(AgAxisBaseTickOptions<?> tick) {
         this.tick = tick;
         return (J) this;
     }
@@ -165,7 +165,7 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
         return crossLines;
     }
 
-    public J setCrossLines(List<AgCartesianCrossLineOptions<?>> crossLines) {
+    public @org.jspecify.annotations.NonNull J setCrossLines(List<AgCartesianCrossLineOptions<?>> crossLines) {
         this.crossLines = crossLines;
         return (J) this;
     }

@@ -31,29 +31,29 @@ public class AgChartThemeParams<J extends AgChartThemeParams<J>> extends JavaScr
     private String tooltipTextColor;
 
     public String getForegroundColor() { return foregroundColor; }
-    public J setForegroundColor(String foregroundColor) { this.foregroundColor = foregroundColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setForegroundColor(String foregroundColor) { this.foregroundColor = foregroundColor; return (J) this; }
 
     public String getBackgroundColor() { return backgroundColor; }
-    public J setBackgroundColor(String backgroundColor) { this.backgroundColor = backgroundColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setBackgroundColor(String backgroundColor) { this.backgroundColor = backgroundColor; return (J) this; }
 
     public String getAccentColor() { return accentColor; }
-    public J setAccentColor(String accentColor) { this.accentColor = accentColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setAccentColor(String accentColor) { this.accentColor = accentColor; return (J) this; }
 
     public String getChromeBackgroundColor() { return chromeBackgroundColor; }
-    public J setChromeBackgroundColor(String chromeBackgroundColor) { this.chromeBackgroundColor = chromeBackgroundColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setChromeBackgroundColor(String chromeBackgroundColor) { this.chromeBackgroundColor = chromeBackgroundColor; return (J) this; }
 
     public String getChromeTextColor() { return chromeTextColor; }
-    public J setChromeTextColor(String chromeTextColor) { this.chromeTextColor = chromeTextColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setChromeTextColor(String chromeTextColor) { this.chromeTextColor = chromeTextColor; return (J) this; }
 
     public Object getFontFamily() { return fontFamily; }
-    public J setFontFamily(Object fontFamily) { this.fontFamily = fontFamily; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontFamily(Object fontFamily) { this.fontFamily = fontFamily; return (J) this; }
 
     public Integer getFontSize() { return fontSize; }
-    public J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
 
     public String getTooltipBackgroundColor() { return tooltipBackgroundColor; }
-    public J setTooltipBackgroundColor(String tooltipBackgroundColor) { this.tooltipBackgroundColor = tooltipBackgroundColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setTooltipBackgroundColor(String tooltipBackgroundColor) { this.tooltipBackgroundColor = tooltipBackgroundColor; return (J) this; }
 
     public String getTooltipTextColor() { return tooltipTextColor; }
-    public J setTooltipTextColor(String tooltipTextColor) { this.tooltipTextColor = tooltipTextColor; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setTooltipTextColor(String tooltipTextColor) { this.tooltipTextColor = tooltipTextColor; return (J) this; }
 }

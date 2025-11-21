@@ -32,44 +32,44 @@ public class AgPieChart<J extends AgPieChart<J>> extends AgChart<J>
         this.angleKey = angleKey;
     }
 
-    public J setLegendItemKey(String legendItemKey)
+    public @org.jspecify.annotations.NonNull J setLegendItemKey(String legendItemKey)
     {
         this.legendItemKey = legendItemKey;
         return (J) this;
     }
 
-    public J setCalloutLabelKey(String calloutLabelKey)
+    public @org.jspecify.annotations.NonNull J setCalloutLabelKey(String calloutLabelKey)
     {
         this.calloutLabelKey = calloutLabelKey;
         return (J) this;
     }
 
-    public J setSectorLabelKey(String sectorLabelKey)
+    public @org.jspecify.annotations.NonNull J setSectorLabelKey(String sectorLabelKey)
     {
         this.sectorLabelKey = sectorLabelKey;
         return (J) this;
     }
 
-    public J setAngleName(String angleName)
+    public @org.jspecify.annotations.NonNull J setAngleName(String angleName)
     {
         this.angleName = angleName;
         return (J) this;
     }
 
-    public J setCalloutLabelName(String calloutLabelName)
+    public @org.jspecify.annotations.NonNull J setCalloutLabelName(String calloutLabelName)
     {
         this.calloutLabelName = calloutLabelName;
         return (J) this;
     }
 
-    public J setSectorLabelName(String sectorLabelName)
+    public @org.jspecify.annotations.NonNull J setSectorLabelName(String sectorLabelName)
     {
         this.sectorLabelName = sectorLabelName;
         return (J) this;
     }
 
     /** Optional: attach data directly to the series. */
-    public J setData(List<?> data)
+    public @org.jspecify.annotations.NonNull J setData(List<?> data)
     {
         this.data = data;
         return (J) this;

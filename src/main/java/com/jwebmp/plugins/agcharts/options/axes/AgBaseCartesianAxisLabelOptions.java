@@ -65,7 +65,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -74,7 +74,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return fontSize;
     }
 
-    public J setFontSize(Integer fontSize) {
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) {
         this.fontSize = fontSize;
         return (J) this;
     }
@@ -83,7 +83,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return fontFamily;
     }
 
-    public J setFontFamily(String fontFamily) {
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) {
         this.fontFamily = fontFamily;
         return (J) this;
     }
@@ -92,7 +92,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return fontWeight;
     }
 
-    public J setFontWeight(String fontWeight) {
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) {
         this.fontWeight = fontWeight;
         return (J) this;
     }
@@ -101,7 +101,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -110,7 +110,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return rotation;
     }
 
-    public J setRotation(Integer rotation) {
+    public @org.jspecify.annotations.NonNull J setRotation(Integer rotation) {
         this.rotation = rotation;
         return (J) this;
     }
@@ -119,12 +119,12 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return format;
     }
 
-    public J setFormat(Object format) {
+    public @org.jspecify.annotations.NonNull J setFormat(Object format) {
         this.format = format;
         return (J) this;
     }
 
-    public J setFormat(String format) {
+    public @org.jspecify.annotations.NonNull J setFormat(String format) {
         this.format = (Object) format;
         return (J) this;
     }
@@ -133,7 +133,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return avoidCollisions;
     }
 
-    public J setAvoidCollisions(Boolean avoidCollisions) {
+    public @org.jspecify.annotations.NonNull J setAvoidCollisions(Boolean avoidCollisions) {
         this.avoidCollisions = avoidCollisions;
         return (J) this;
     }
@@ -142,7 +142,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return wrapping;
     }
 
-    public J setWrapping(AgAxisLabelWrapping wrapping) {
+    public @org.jspecify.annotations.NonNull J setWrapping(AgAxisLabelWrapping wrapping) {
         this.wrapping = wrapping;
         return (J) this;
     }
@@ -151,7 +151,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return truncate;
     }
 
-    public J setTruncate(Boolean truncate) {
+    public @org.jspecify.annotations.NonNull J setTruncate(Boolean truncate) {
         this.truncate = truncate;
         return (J) this;
     }
@@ -160,7 +160,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return autoRotate;
     }
 
-    public J setAutoRotate(Boolean autoRotate) {
+    public @org.jspecify.annotations.NonNull J setAutoRotate(Boolean autoRotate) {
         this.autoRotate = autoRotate;
         return (J) this;
     }
@@ -169,7 +169,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return autoRotateAngle;
     }
 
-    public J setAutoRotateAngle(Integer autoRotateAngle) {
+    public @org.jspecify.annotations.NonNull J setAutoRotateAngle(Integer autoRotateAngle) {
         this.autoRotateAngle = autoRotateAngle;
         return (J) this;
     }
@@ -178,7 +178,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -187,7 +187,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return formatter;
     }
 
-    public J setFormatter(String formatter) {
+    public @org.jspecify.annotations.NonNull J setFormatter(String formatter) {
         this.formatter = formatter;
         return (J) this;
     }
@@ -196,7 +196,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return itemStyler;
     }
 
-    public J setItemStyler(String itemStyler) {
+    public @org.jspecify.annotations.NonNull J setItemStyler(String itemStyler) {
         this.itemStyler = itemStyler;
         return (J) this;
     }
@@ -207,13 +207,13 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
     }
 
     /** Set label background fill using a CSS color string. */
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = (Object) fill;
         return (J) this;
     }
 
     /** Set label background fill using an object (e.g., gradient/pattern/image). */
-    public J setFill(Object fill) {
+    public @org.jspecify.annotations.NonNull J setFill(Object fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -222,7 +222,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
@@ -231,7 +231,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return border;
     }
 
-    public J setBorder(AgBorderOptions<?> border) {
+    public @org.jspecify.annotations.NonNull J setBorder(AgBorderOptions<?> border) {
         this.border = border;
         return (J) this;
     }
@@ -240,7 +240,7 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
         return cornerRadius;
     }
 
-    public J setCornerRadius(Integer cornerRadius) {
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius) {
         this.cornerRadius = cornerRadius;
         return (J) this;
     }
@@ -250,13 +250,13 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
     }
 
     /** Set uniform padding (pixels) for all sides. */
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         this.padding = padding;
         return (J) this;
     }
 
     /** Set per-side padding. */
-    public J setPadding(AgPadding<?> padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(AgPadding<?> padding) {
         this.padding = padding;
         return (J) this;
     }

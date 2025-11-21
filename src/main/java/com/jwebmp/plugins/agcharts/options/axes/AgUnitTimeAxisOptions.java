@@ -33,7 +33,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return min;
     }
 
-    public J setMin(Date min) {
+    public @org.jspecify.annotations.NonNull J setMin(Date min) {
         this.min = min;
         return (J) this;
     }
@@ -42,7 +42,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return max;
     }
 
-    public J setMax(Date max) {
+    public @org.jspecify.annotations.NonNull J setMax(Date max) {
         this.max = max;
         return (J) this;
     }
@@ -51,7 +51,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return interval;
     }
 
-    public J setInterval(AgAxisTimeIntervalOptions<?> interval) {
+    public @org.jspecify.annotations.NonNull J setInterval(AgAxisTimeIntervalOptions<?> interval) {
         this.interval = interval;
         return (J) this;
     }
@@ -60,12 +60,12 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return unit;
     }
 
-    public J setUnit(AgTimeIntervalUnit unit) {
+    public @org.jspecify.annotations.NonNull J setUnit(AgTimeIntervalUnit unit) {
         this.unit = unit;
         return (J) this;
     }
 
-    public J setUnit(AgTimeInterval unit) {
+    public @org.jspecify.annotations.NonNull J setUnit(AgTimeInterval unit) {
         this.unit = unit;
         return (J) this;
     }
@@ -74,7 +74,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return parentLevel;
     }
 
-    public J setParentLevel(AgTimeAxisParentLevel<?> parentLevel) {
+    public @org.jspecify.annotations.NonNull J setParentLevel(AgTimeAxisParentLevel<?> parentLevel) {
         this.parentLevel = parentLevel;
         return (J) this;
     }
@@ -83,7 +83,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return paddingInner;
     }
 
-    public J setPaddingInner(Double paddingInner) {
+    public @org.jspecify.annotations.NonNull J setPaddingInner(Double paddingInner) {
         this.paddingInner = paddingInner;
         return (J) this;
     }
@@ -92,7 +92,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return paddingOuter;
     }
 
-    public J setPaddingOuter(Double paddingOuter) {
+    public @org.jspecify.annotations.NonNull J setPaddingOuter(Double paddingOuter) {
         this.paddingOuter = paddingOuter;
         return (J) this;
     }
@@ -101,7 +101,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return groupPaddingInner;
     }
 
-    public J setGroupPaddingInner(Double groupPaddingInner) {
+    public @org.jspecify.annotations.NonNull J setGroupPaddingInner(Double groupPaddingInner) {
         this.groupPaddingInner = groupPaddingInner;
         return (J) this;
     }
@@ -110,7 +110,7 @@ public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends A
         return bandHighlight;
     }
 
-    public J setBandHighlight(AgBandHighlightOptions<?> bandHighlight) {
+    public @org.jspecify.annotations.NonNull J setBandHighlight(AgBandHighlightOptions<?> bandHighlight) {
         this.bandHighlight = bandHighlight;
         return (J) this;
     }

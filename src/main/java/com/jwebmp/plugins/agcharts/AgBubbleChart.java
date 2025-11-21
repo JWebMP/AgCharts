@@ -31,25 +31,25 @@ public class AgBubbleChart<J extends AgBubbleChart<J>> extends AgChart<J>
     }
 
     /** Optional: attach data directly to the series. */
-    public J setData(List<?> data)
+    public @org.jspecify.annotations.NonNull J setData(List<?> data)
     {
         this.data = data;
         return (J) this;
     }
 
-    public J setXName(String xName)
+    public @org.jspecify.annotations.NonNull J setXName(String xName)
     {
         this.xName = xName;
         return (J) this;
     }
 
-    public J setYName(String yName)
+    public @org.jspecify.annotations.NonNull J setYName(String yName)
     {
         this.yName = yName;
         return (J) this;
     }
 
-    public J setSizeName(String sizeName)
+    public @org.jspecify.annotations.NonNull J setSizeName(String sizeName)
     {
         this.sizeName = sizeName;
         return (J) this;

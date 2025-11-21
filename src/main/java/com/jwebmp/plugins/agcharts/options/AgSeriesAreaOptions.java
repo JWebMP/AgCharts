@@ -20,7 +20,7 @@ public class AgSeriesAreaOptions<J extends AgSeriesAreaOptions<J>> extends JavaS
         return border;
     }
 
-    public J setBorder(AgBorderOptions<?> border) {
+    public @org.jspecify.annotations.NonNull J setBorder(AgBorderOptions<?> border) {
         this.border = border;
         return (J) this;
     }
@@ -29,7 +29,7 @@ public class AgSeriesAreaOptions<J extends AgSeriesAreaOptions<J>> extends JavaS
         return cornerRadius;
     }
 
-    public J setCornerRadius(Integer cornerRadius) {
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius) {
         this.cornerRadius = cornerRadius;
         return (J) this;
     }
@@ -39,13 +39,13 @@ public class AgSeriesAreaOptions<J extends AgSeriesAreaOptions<J>> extends JavaS
     }
 
     /** Set uniform padding in pixels on all sides. */
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         this.padding = padding;
         return (J) this;
     }
 
     /** Set per-side padding. */
-    public J setPadding(AgPadding<?> padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(AgPadding<?> padding) {
         this.padding = padding;
         return (J) this;
     }

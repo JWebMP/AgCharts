@@ -16,7 +16,7 @@ public class AgLegendBorderOptions<J extends AgLegendBorderOptions<J>> extends J
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -25,7 +25,7 @@ public class AgLegendBorderOptions<J extends AgLegendBorderOptions<J>> extends J
         return width;
     }
 
-    public J setWidth(Integer width) {
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width) {
         this.width = width;
         return (J) this;
     }
@@ -34,7 +34,7 @@ public class AgLegendBorderOptions<J extends AgLegendBorderOptions<J>> extends J
         return opacity;
     }
 
-    public J setOpacity(Double opacity) {
+    public @org.jspecify.annotations.NonNull J setOpacity(Double opacity) {
         this.opacity = opacity;
         return (J) this;
     }

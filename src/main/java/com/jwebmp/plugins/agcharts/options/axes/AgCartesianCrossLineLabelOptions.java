@@ -28,7 +28,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return text;
     }
 
-    public J setText(String text) {
+    public @org.jspecify.annotations.NonNull J setText(String text) {
         this.text = text;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return position;
     }
 
-    public J setPosition(String position) {
+    public @org.jspecify.annotations.NonNull J setPosition(String position) {
         this.position = position;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return rotation;
     }
 
-    public J setRotation(Integer rotation) {
+    public @org.jspecify.annotations.NonNull J setRotation(Integer rotation) {
         this.rotation = rotation;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return fontSize;
     }
 
-    public J setFontSize(Integer fontSize) {
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) {
         this.fontSize = fontSize;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return fontFamily;
     }
 
-    public J setFontFamily(String fontFamily) {
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) {
         this.fontFamily = fontFamily;
         return (J) this;
     }
@@ -73,7 +73,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return fontWeight;
     }
 
-    public J setFontWeight(String fontWeight) {
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) {
         this.fontWeight = fontWeight;
         return (J) this;
     }
@@ -82,7 +82,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -91,7 +91,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return padding;
     }
 
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         this.padding = padding;
         return (J) this;
     }
@@ -100,7 +100,7 @@ public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabe
         return positionAngle;
     }
 
-    public J setPositionAngle(Integer positionAngle) {
+    public @org.jspecify.annotations.NonNull J setPositionAngle(Integer positionAngle) {
         this.positionAngle = positionAngle;
         return (J) this;
     }

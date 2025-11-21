@@ -29,29 +29,29 @@ public class AgChartTooltipOptions<J extends AgChartTooltipOptions<J>> extends J
     private AgAxisLabelWrapping wrapping; // reuse general wrapping enum values
 
     public Boolean getEnabled() { return enabled; }
-    public J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
 
     public AgTooltipMode getMode() { return mode; }
-    public J setMode(AgTooltipMode mode) { this.mode = mode; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setMode(AgTooltipMode mode) { this.mode = mode; return (J) this; }
 
     public Boolean getShowArrow() { return showArrow; }
-    public J setShowArrow(Boolean showArrow) { this.showArrow = showArrow; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setShowArrow(Boolean showArrow) { this.showArrow = showArrow; return (J) this; }
 
     public Object getRange() { return range; }
     /** Set range using a keyword: 'nearest' or 'exact'. */
-    public J setRange(String range) { this.range = range; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setRange(String range) { this.range = range; return (J) this; }
     /** Set range using pixel distance. */
-    public J setRange(Integer pixels) { this.range = pixels; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setRange(Integer pixels) { this.range = pixels; return (J) this; }
 
     public AgTooltipPositionOptions<?> getPosition() { return position; }
-    public J setPosition(AgTooltipPositionOptions<?> position) { this.position = position; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPosition(AgTooltipPositionOptions<?> position) { this.position = position; return (J) this; }
 
     public Boolean getPagination() { return pagination; }
-    public J setPagination(Boolean pagination) { this.pagination = pagination; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPagination(Boolean pagination) { this.pagination = pagination; return (J) this; }
 
     public Integer getDelay() { return delay; }
-    public J setDelay(Integer delay) { this.delay = delay; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setDelay(Integer delay) { this.delay = delay; return (J) this; }
 
     public AgAxisLabelWrapping getWrapping() { return wrapping; }
-    public J setWrapping(AgAxisLabelWrapping wrapping) { this.wrapping = wrapping; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setWrapping(AgAxisLabelWrapping wrapping) { this.wrapping = wrapping; return (J) this; }
 }

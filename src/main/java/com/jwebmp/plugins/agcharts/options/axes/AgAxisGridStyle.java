@@ -26,7 +26,7 @@ public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPar
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPar
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -44,7 +44,7 @@ public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPar
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -53,7 +53,7 @@ public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPar
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -62,7 +62,7 @@ public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPar
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }

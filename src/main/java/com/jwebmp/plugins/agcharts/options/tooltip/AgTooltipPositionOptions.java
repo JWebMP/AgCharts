@@ -22,7 +22,7 @@ public class AgTooltipPositionOptions<J extends AgTooltipPositionOptions<J>> ext
         return anchorTo;
     }
 
-    public J setAnchorTo(AgTooltipAnchorTo anchorTo) {
+    public @org.jspecify.annotations.NonNull J setAnchorTo(AgTooltipAnchorTo anchorTo) {
         this.anchorTo = anchorTo;
         return (J) this;
     }
@@ -32,13 +32,13 @@ public class AgTooltipPositionOptions<J extends AgTooltipPositionOptions<J>> ext
     }
 
     /** Set a single placement string. */
-    public J setPlacement(String placement) {
+    public @org.jspecify.annotations.NonNull J setPlacement(String placement) {
         this.placement = placement;
         return (J) this;
     }
 
     /** Set fallbacks by providing a list of placement strings. */
-    public J setPlacement(List<String> placements) {
+    public @org.jspecify.annotations.NonNull J setPlacement(List<String> placements) {
         this.placement = placements;
         return (J) this;
     }
@@ -47,7 +47,7 @@ public class AgTooltipPositionOptions<J extends AgTooltipPositionOptions<J>> ext
         return xOffset;
     }
 
-    public J setXOffset(Integer xOffset) {
+    public @org.jspecify.annotations.NonNull J setXOffset(Integer xOffset) {
         this.xOffset = xOffset;
         return (J) this;
     }
@@ -56,7 +56,7 @@ public class AgTooltipPositionOptions<J extends AgTooltipPositionOptions<J>> ext
         return yOffset;
     }
 
-    public J setYOffset(Integer yOffset) {
+    public @org.jspecify.annotations.NonNull J setYOffset(Integer yOffset) {
         this.yOffset = yOffset;
         return (J) this;
     }

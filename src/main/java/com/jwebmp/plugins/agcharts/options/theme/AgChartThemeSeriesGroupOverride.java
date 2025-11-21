@@ -14,7 +14,7 @@ public class AgChartThemeSeriesGroupOverride<J extends AgChartThemeSeriesGroupOv
         return series;
     }
 
-    public J setSeries(AgChartThemeSeriesOverride<?> series) {
+    public @org.jspecify.annotations.NonNull J setSeries(AgChartThemeSeriesOverride<?> series) {
         this.series = series;
         return (J) this;
     }

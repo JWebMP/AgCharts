@@ -46,7 +46,7 @@ public class AgLocaleOptions<J extends AgLocaleOptions<J>> extends JavaScriptPar
     /**
      * Set localeText using a Java Map. Clears any previously set raw JS reference.
      */
-    public J setLocaleText(Map<String, String> localeTextMap) {
+    public @org.jspecify.annotations.NonNull J setLocaleText(Map<String, String> localeTextMap) {
         this.localeTextMap = localeTextMap;
         this.localeTextJs = null;
         return (J) this;
@@ -61,7 +61,7 @@ public class AgLocaleOptions<J extends AgLocaleOptions<J>> extends JavaScriptPar
      * This string should NOT be quoted and must be a valid JavaScript expression.
      * Clears any previously set Map.
      */
-    public J setLocaleTextJs(String localeTextJs) {
+    public @org.jspecify.annotations.NonNull J setLocaleTextJs(String localeTextJs) {
         this.localeTextJs = localeTextJs;
         this.localeTextMap = null;
         return (J) this;
@@ -75,7 +75,7 @@ public class AgLocaleOptions<J extends AgLocaleOptions<J>> extends JavaScriptPar
      * Provide a raw JS function for getLocaleText. Example:
      * "function({ key, defaultValue, variables }) { return i18n.t(key) ?? defaultValue; }"
      */
-    public J setGetLocaleText(String getLocaleText) {
+    public @org.jspecify.annotations.NonNull J setGetLocaleText(String getLocaleText) {
         this.getLocaleText = getLocaleText;
         return (J) this;
     }

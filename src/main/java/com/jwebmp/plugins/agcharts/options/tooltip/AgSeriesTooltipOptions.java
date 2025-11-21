@@ -25,18 +25,18 @@ public class AgSeriesTooltipOptions<J extends AgSeriesTooltipOptions<J>> extends
     private AgTooltipInteractionOptions<?> interaction;
 
     public Boolean getEnabled() { return enabled; }
-    public J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) { this.enabled = enabled; return (J) this; }
 
     public Object getRange() { return range; }
-    public J setRange(String range) { this.range = range; return (J) this; }
-    public J setRange(Integer pixels) { this.range = pixels; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setRange(String range) { this.range = range; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setRange(Integer pixels) { this.range = pixels; return (J) this; }
 
     public AgTooltipPositionOptions<?> getPosition() { return position; }
-    public J setPosition(AgTooltipPositionOptions<?> position) { this.position = position; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPosition(AgTooltipPositionOptions<?> position) { this.position = position; return (J) this; }
 
     public String getRenderer() { return renderer; }
-    public J setRenderer(String renderer) { this.renderer = renderer; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setRenderer(String renderer) { this.renderer = renderer; return (J) this; }
 
     public AgTooltipInteractionOptions<?> getInteraction() { return interaction; }
-    public J setInteraction(AgTooltipInteractionOptions<?> interaction) { this.interaction = interaction; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setInteraction(AgTooltipInteractionOptions<?> interaction) { this.interaction = interaction; return (J) this; }
 }

@@ -15,7 +15,7 @@ public class AgChartLegendPaginationOptions<J extends AgChartLegendPaginationOpt
         return label;
     }
 
-    public J setLabel(AgChartLegendPaginationLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgChartLegendPaginationLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }
@@ -24,7 +24,7 @@ public class AgChartLegendPaginationOptions<J extends AgChartLegendPaginationOpt
         return button;
     }
 
-    public J setButton(AgChartLegendPaginationButtonOptions<?> button) {
+    public @org.jspecify.annotations.NonNull J setButton(AgChartLegendPaginationButtonOptions<?> button) {
         this.button = button;
         return (J) this;
     }

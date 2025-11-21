@@ -48,7 +48,7 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
     }
 
     /** Replace the series array entirely. */
-    public J setSeries(List<AgSeriesBaseOptions<?>> series)
+    public @org.jspecify.annotations.NonNull J setSeries(List<AgSeriesBaseOptions<?>> series)
     {
         this.series.clear();
         if (series != null)
@@ -59,7 +59,7 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
     }
 
     /** Optional: provide axes for primary/secondary configuration and customisation. */
-    public J setAxes(List<AgAxisBaseOptions<?>> axes)
+    public @org.jspecify.annotations.NonNull J setAxes(List<AgAxisBaseOptions<?>> axes)
     {
         this.axes = axes;
         return (J) this;

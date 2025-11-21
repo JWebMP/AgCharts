@@ -13,11 +13,11 @@ public class AgDonutSeriesCalloutOptions<J extends AgDonutSeriesCalloutOptions<J
     private Integer strokeWidth;
 
     public String getColors() { return colors; }
-    public J setColors(String colors) { this.colors = colors; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setColors(String colors) { this.colors = colors; return (J) this; }
 
     public Integer getLength() { return length; }
-    public J setLength(Integer length) { this.length = length; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setLength(Integer length) { this.length = length; return (J) this; }
 
     public Integer getStrokeWidth() { return strokeWidth; }
-    public J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
 }

@@ -11,5 +11,5 @@ public class AgDonutInnerCircle<J extends AgDonutInnerCircle<J>> extends JavaScr
     private String fill; // background colour for the centre area
 
     public String getFill() { return fill; }
-    public J setFill(String fill) { this.fill = fill; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFill(String fill) { this.fill = fill; return (J) this; }
 }

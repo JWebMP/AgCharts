@@ -19,7 +19,7 @@ public class AgChartBackground<J extends AgChartBackground<J>> extends JavaScrip
         return visible;
     }
 
-    public J setVisible(Boolean visible) {
+    public @org.jspecify.annotations.NonNull J setVisible(Boolean visible) {
         this.visible = visible;
         return (J) this;
     }
@@ -28,7 +28,7 @@ public class AgChartBackground<J extends AgChartBackground<J>> extends JavaScrip
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }

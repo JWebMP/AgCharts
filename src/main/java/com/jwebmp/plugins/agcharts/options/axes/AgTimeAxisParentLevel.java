@@ -17,7 +17,7 @@ public class AgTimeAxisParentLevel<J extends AgTimeAxisParentLevel<J>> extends J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -26,7 +26,7 @@ public class AgTimeAxisParentLevel<J extends AgTimeAxisParentLevel<J>> extends J
         return tick;
     }
 
-    public J setTick(AgAxisBaseTickOptions<?> tick) {
+    public @org.jspecify.annotations.NonNull J setTick(AgAxisBaseTickOptions<?> tick) {
         this.tick = tick;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgTimeAxisParentLevel<J extends AgTimeAxisParentLevel<J>> extends J
         return label;
     }
 
-    public J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }

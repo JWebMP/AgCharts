@@ -91,7 +91,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return axes;
     }
 
-    public J setAxes(List<AgAxisBaseOptions<?>> axes)
+    public @org.jspecify.annotations.NonNull J setAxes(List<AgAxisBaseOptions<?>> axes)
     {
         this.axes = axes;
         return (J) this;
@@ -102,7 +102,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return legend;
     }
 
-    public J setLegend(AgChartLegendOptions<?> legend)
+    public @org.jspecify.annotations.NonNull J setLegend(AgChartLegendOptions<?> legend)
     {
         this.legend = legend;
         return (J) this;
@@ -113,7 +113,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return series;
     }
 
-    public J setSeries(List<AgSeriesBaseOptions<?>> series)
+    public @org.jspecify.annotations.NonNull J setSeries(List<AgSeriesBaseOptions<?>> series)
     {
         this.series = series;
         return (J) this;
@@ -124,7 +124,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return gradientLegend;
     }
 
-    public J setGradientLegend(com.jwebmp.plugins.agcharts.options.legend.gradient.AgGradientLegendOptions<?> gradientLegend)
+    public @org.jspecify.annotations.NonNull J setGradientLegend(com.jwebmp.plugins.agcharts.options.legend.gradient.AgGradientLegendOptions<?> gradientLegend)
     {
         this.gradientLegend = gradientLegend;
         return (J) this;
@@ -135,7 +135,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return navigator;
     }
 
-    public J setNavigator(com.jwebmp.plugins.agcharts.options.navigator.AgNavigatorOptions<?> navigator)
+    public @org.jspecify.annotations.NonNull J setNavigator(com.jwebmp.plugins.agcharts.options.navigator.AgNavigatorOptions<?> navigator)
     {
         this.navigator = navigator;
         return (J) this;
@@ -149,7 +149,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Set theme using a custom theme object.
      */
-    public J setTheme(AgChartTheme<?> theme)
+    public @org.jspecify.annotations.NonNull J setTheme(AgChartTheme<?> theme)
     {
         this.theme = theme;
         return (J) this;
@@ -158,7 +158,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Set theme using a stock theme name (e.g., "ag-vivid").
      */
-    public J setTheme(String themeName)
+    public @org.jspecify.annotations.NonNull J setTheme(String themeName)
     {
         this.theme = themeName;
         return (J) this;
@@ -169,7 +169,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return locale;
     }
 
-    public J setLocale(AgLocaleOptions<?> locale)
+    public @org.jspecify.annotations.NonNull J setLocale(AgLocaleOptions<?> locale)
     {
         this.locale = locale;
         return (J) this;
@@ -180,7 +180,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return tooltip;
     }
 
-    public J setTooltip(AgChartTooltipOptions<?> tooltip)
+    public @org.jspecify.annotations.NonNull J setTooltip(AgChartTooltipOptions<?> tooltip)
     {
         this.tooltip = tooltip;
         return (J) this;
@@ -191,7 +191,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return background;
     }
 
-    public J setBackground(AgChartBackground<?> background)
+    public @org.jspecify.annotations.NonNull J setBackground(AgChartBackground<?> background)
     {
         this.background = background;
         return (J) this;
@@ -202,7 +202,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return seriesArea;
     }
 
-    public J setSeriesArea(AgSeriesAreaOptions<?> seriesArea)
+    public @org.jspecify.annotations.NonNull J setSeriesArea(AgSeriesAreaOptions<?> seriesArea)
     {
         this.seriesArea = seriesArea;
         return (J) this;
@@ -213,7 +213,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
         return overlays;
     }
 
-    public J setOverlays(com.jwebmp.plugins.agcharts.options.overlays.AgChartOverlaysOptions<?> overlays)
+    public @org.jspecify.annotations.NonNull J setOverlays(com.jwebmp.plugins.agcharts.options.overlays.AgChartOverlaysOptions<?> overlays)
     {
         this.overlays = overlays;
         return (J) this;
@@ -222,7 +222,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     // --- Layout / Sizing getters/setters ---
     public Integer getWidth() {return width;}
 
-    public J setWidth(Integer width)
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width)
     {
         this.width = width;
         return (J) this;
@@ -230,7 +230,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public Integer getHeight() {return height;}
 
-    public J setHeight(Integer height)
+    public @org.jspecify.annotations.NonNull J setHeight(Integer height)
     {
         this.height = height;
         return (J) this;
@@ -238,7 +238,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public Integer getMinWidth() {return minWidth;}
 
-    public J setMinWidth(Integer minWidth)
+    public @org.jspecify.annotations.NonNull J setMinWidth(Integer minWidth)
     {
         this.minWidth = minWidth;
         return (J) this;
@@ -246,7 +246,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public Integer getMinHeight() {return minHeight;}
 
-    public J setMinHeight(Integer minHeight)
+    public @org.jspecify.annotations.NonNull J setMinHeight(Integer minHeight)
     {
         this.minHeight = minHeight;
         return (J) this;
@@ -257,7 +257,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Set uniform chart padding in pixels.
      */
-    public J setPadding(Integer padding)
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding)
     {
         this.padding = padding;
         return (J) this;
@@ -266,7 +266,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Set per-side chart padding.
      */
-    public J setPadding(com.jwebmp.plugins.agcharts.options.legend.AgPadding<?> padding)
+    public @org.jspecify.annotations.NonNull J setPadding(com.jwebmp.plugins.agcharts.options.legend.AgPadding<?> padding)
     {
         this.padding = padding;
         return (J) this;
@@ -274,7 +274,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public AgChartCaptionOptions<?> getTitle() {return title;}
 
-    public J setTitle(AgChartCaptionOptions<?> title)
+    public @org.jspecify.annotations.NonNull J setTitle(AgChartCaptionOptions<?> title)
     {
         this.title = title;
         return (J) this;
@@ -282,7 +282,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public AgChartCaptionOptions<?> getSubtitle() {return subtitle;}
 
-    public J setSubtitle(AgChartCaptionOptions<?> subtitle)
+    public @org.jspecify.annotations.NonNull J setSubtitle(AgChartCaptionOptions<?> subtitle)
     {
         this.subtitle = subtitle;
         return (J) this;
@@ -290,7 +290,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     public AgChartCaptionOptions<?> getFootnote() {return footnote;}
 
-    public J setFootnote(AgChartCaptionOptions<?> footnote)
+    public @org.jspecify.annotations.NonNull J setFootnote(AgChartCaptionOptions<?> footnote)
     {
         this.footnote = footnote;
         return (J) this;
@@ -304,7 +304,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Sets a global formatter function (raw JS). This clears any property-based formatter mappings.
      */
-    public J setFormatterFunction(String formatterFunction)
+    public @org.jspecify.annotations.NonNull J setFormatterFunction(String formatterFunction)
     {
         this.formatterFunction = formatterFunction;
         // Ensure only one "formatter" representation is active.
@@ -321,7 +321,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Sets per-property formatter callbacks (raw JS per property). This clears the global formatter and string formats.
      */
-    public J setFormatterFunctions(AgChartPropertyFormatterFunctions<?> formatterFunctions)
+    public @org.jspecify.annotations.NonNull J setFormatterFunctions(AgChartPropertyFormatterFunctions<?> formatterFunctions)
     {
         this.formatterFunctions = formatterFunctions;
         this.formatterFunction = null;
@@ -337,7 +337,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     /**
      * Sets per-property formatter format strings. This clears the global formatter and function mappings.
      */
-    public J setFormatterFormats(AgChartPropertyFormatterFormats<?> formatterFormats)
+    public @org.jspecify.annotations.NonNull J setFormatterFormats(AgChartPropertyFormatterFormats<?> formatterFormats)
     {
         this.formatterFormats = formatterFormats;
         this.formatterFunction = null;

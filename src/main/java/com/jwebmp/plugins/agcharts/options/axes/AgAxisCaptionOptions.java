@@ -17,7 +17,7 @@ public class AgAxisCaptionOptions<J extends AgAxisCaptionOptions<J>> extends Jav
         return text;
     }
 
-    public J setText(String text) {
+    public @org.jspecify.annotations.NonNull J setText(String text) {
         this.text = text;
         return (J) this;
     }
@@ -26,7 +26,7 @@ public class AgAxisCaptionOptions<J extends AgAxisCaptionOptions<J>> extends Jav
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgAxisCaptionOptions<J extends AgAxisCaptionOptions<J>> extends Jav
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -44,7 +44,7 @@ public class AgAxisCaptionOptions<J extends AgAxisCaptionOptions<J>> extends Jav
         return spacing;
     }
 
-    public J setSpacing(Integer spacing) {
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing) {
         this.spacing = spacing;
         return (J) this;
     }

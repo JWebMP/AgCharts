@@ -15,7 +15,7 @@ public class AgChartLegendItemLineOptions<J extends AgChartLegendItemLineOptions
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -24,7 +24,7 @@ public class AgChartLegendItemLineOptions<J extends AgChartLegendItemLineOptions
         return length;
     }
 
-    public J setLength(Integer length) {
+    public @org.jspecify.annotations.NonNull J setLength(Integer length) {
         this.length = length;
         return (J) this;
     }

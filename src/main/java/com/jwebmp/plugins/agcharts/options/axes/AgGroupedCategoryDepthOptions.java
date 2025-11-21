@@ -11,7 +11,7 @@ public class AgGroupedCategoryDepthOptions<J extends AgGroupedCategoryDepthOptio
         return label;
     }
 
-    public J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgBaseCartesianAxisLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }

@@ -16,20 +16,20 @@ public class AgDonutInnerLabel<J extends AgDonutInnerLabel<J>> extends JavaScrip
     private String color;
 
     public String getText() { return text; }
-    public J setText(String text) { this.text = text; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setText(String text) { this.text = text; return (J) this; }
 
     public Integer getSpacing() { return spacing; }
-    public J setSpacing(Integer spacing) { this.spacing = spacing; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setSpacing(Integer spacing) { this.spacing = spacing; return (J) this; }
 
     public Integer getFontSize() { return fontSize; }
-    public J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) { this.fontSize = fontSize; return (J) this; }
 
     public String getFontFamily() { return fontFamily; }
-    public J setFontFamily(String fontFamily) { this.fontFamily = fontFamily; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) { this.fontFamily = fontFamily; return (J) this; }
 
     public String getFontWeight() { return fontWeight; }
-    public J setFontWeight(String fontWeight) { this.fontWeight = fontWeight; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) { this.fontWeight = fontWeight; return (J) this; }
 
     public String getColor() { return color; }
-    public J setColor(String color) { this.color = color; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setColor(String color) { this.color = color; return (J) this; }
 }

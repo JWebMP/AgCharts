@@ -23,7 +23,7 @@ public class AgChartLegendPositionOptions<J extends AgChartLegendPositionOptions
         return placement;
     }
 
-    public J setPlacement(String placement) {
+    public @org.jspecify.annotations.NonNull J setPlacement(String placement) {
         this.placement = placement;
         return (J) this;
     }
@@ -32,7 +32,7 @@ public class AgChartLegendPositionOptions<J extends AgChartLegendPositionOptions
         return floating;
     }
 
-    public J setFloating(Boolean floating) {
+    public @org.jspecify.annotations.NonNull J setFloating(Boolean floating) {
         this.floating = floating;
         return (J) this;
     }
@@ -41,7 +41,7 @@ public class AgChartLegendPositionOptions<J extends AgChartLegendPositionOptions
         return xOffset;
     }
 
-    public J setXOffset(Integer xOffset) {
+    public @org.jspecify.annotations.NonNull J setXOffset(Integer xOffset) {
         this.xOffset = xOffset;
         return (J) this;
     }
@@ -50,7 +50,7 @@ public class AgChartLegendPositionOptions<J extends AgChartLegendPositionOptions
         return yOffset;
     }
 
-    public J setYOffset(Integer yOffset) {
+    public @org.jspecify.annotations.NonNull J setYOffset(Integer yOffset) {
         this.yOffset = yOffset;
         return (J) this;
     }

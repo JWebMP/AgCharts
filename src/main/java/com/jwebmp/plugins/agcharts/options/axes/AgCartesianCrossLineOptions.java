@@ -42,7 +42,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return type;
     }
 
-    public J setType(AgCrossLineType type) {
+    public @org.jspecify.annotations.NonNull J setType(AgCrossLineType type) {
         this.type = type;
         return (J) this;
     }
@@ -51,7 +51,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -60,7 +60,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return value;
     }
 
-    public J setValue(Object value) {
+    public @org.jspecify.annotations.NonNull J setValue(Object value) {
         this.value = value;
         return (J) this;
     }
@@ -69,7 +69,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return range;
     }
 
-    public J setRange(List<Object> range) {
+    public @org.jspecify.annotations.NonNull J setRange(List<Object> range) {
         this.range = range;
         return (J) this;
     }
@@ -78,7 +78,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return fill;
     }
 
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -87,7 +87,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
@@ -96,7 +96,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -105,7 +105,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -114,7 +114,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
@@ -123,7 +123,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -132,7 +132,7 @@ public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J
         return label;
     }
 
-    public J setLabel(AgCartesianCrossLineLabelOptions<?> label) {
+    public @org.jspecify.annotations.NonNull J setLabel(AgCartesianCrossLineLabelOptions<?> label) {
         this.label = label;
         return (J) this;
     }

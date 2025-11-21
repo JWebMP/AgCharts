@@ -16,7 +16,7 @@ public class AgGradientColorStop<J extends AgGradientColorStop<J>> extends JavaS
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -25,7 +25,7 @@ public class AgGradientColorStop<J extends AgGradientColorStop<J>> extends JavaS
         return stop;
     }
 
-    public J setStop(Double stop) {
+    public @org.jspecify.annotations.NonNull J setStop(Double stop) {
         this.stop = stop;
         return (J) this;
     }

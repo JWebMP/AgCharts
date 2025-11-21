@@ -19,7 +19,7 @@ public class AgBorderOptions<J extends AgBorderOptions<J>> extends JavaScriptPar
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -28,7 +28,7 @@ public class AgBorderOptions<J extends AgBorderOptions<J>> extends JavaScriptPar
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -37,7 +37,7 @@ public class AgBorderOptions<J extends AgBorderOptions<J>> extends JavaScriptPar
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgBorderOptions<J extends AgBorderOptions<J>> extends JavaScriptPar
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }

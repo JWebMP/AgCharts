@@ -17,7 +17,7 @@ public class AgChartOverlaysOptions<J extends AgChartOverlaysOptions<J>> extends
         return loading;
     }
 
-    public J setLoading(AgChartOverlayOptions<?> loading) {
+    public @org.jspecify.annotations.NonNull J setLoading(AgChartOverlayOptions<?> loading) {
         this.loading = loading;
         return (J) this;
     }
@@ -26,7 +26,7 @@ public class AgChartOverlaysOptions<J extends AgChartOverlaysOptions<J>> extends
         return noData;
     }
 
-    public J setNoData(AgChartOverlayOptions<?> noData) {
+    public @org.jspecify.annotations.NonNull J setNoData(AgChartOverlayOptions<?> noData) {
         this.noData = noData;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgChartOverlaysOptions<J extends AgChartOverlaysOptions<J>> extends
         return noVisibleSeries;
     }
 
-    public J setNoVisibleSeries(AgChartOverlayOptions<?> noVisibleSeries) {
+    public @org.jspecify.annotations.NonNull J setNoVisibleSeries(AgChartOverlayOptions<?> noVisibleSeries) {
         this.noVisibleSeries = noVisibleSeries;
         return (J) this;
     }
@@ -44,7 +44,7 @@ public class AgChartOverlaysOptions<J extends AgChartOverlaysOptions<J>> extends
         return unsupportedBrowser;
     }
 
-    public J setUnsupportedBrowser(AgChartOverlayOptions<?> unsupportedBrowser) {
+    public @org.jspecify.annotations.NonNull J setUnsupportedBrowser(AgChartOverlayOptions<?> unsupportedBrowser) {
         this.unsupportedBrowser = unsupportedBrowser;
         return (J) this;
     }

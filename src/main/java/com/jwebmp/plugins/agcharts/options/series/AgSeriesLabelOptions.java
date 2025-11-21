@@ -37,7 +37,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return fontSize;
     }
 
-    public J setFontSize(Integer fontSize) {
+    public @org.jspecify.annotations.NonNull J setFontSize(Integer fontSize) {
         this.fontSize = fontSize;
         return (J) this;
     }
@@ -46,7 +46,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return fontFamily;
     }
 
-    public J setFontFamily(String fontFamily) {
+    public @org.jspecify.annotations.NonNull J setFontFamily(String fontFamily) {
         this.fontFamily = fontFamily;
         return (J) this;
     }
@@ -55,7 +55,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return fontWeight;
     }
 
-    public J setFontWeight(String fontWeight) {
+    public @org.jspecify.annotations.NonNull J setFontWeight(String fontWeight) {
         this.fontWeight = fontWeight;
         return (J) this;
     }
@@ -64,7 +64,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -74,13 +74,13 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
     }
 
     /** Set uniform padding (pixels) for all sides. */
-    public J setPadding(Integer padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {
         this.padding = padding;
         return (J) this;
     }
 
     /** Set per-side padding box. */
-    public J setPadding(AgPadding<?> padding) {
+    public @org.jspecify.annotations.NonNull J setPadding(AgPadding<?> padding) {
         this.padding = padding;
         return (J) this;
     }
@@ -89,7 +89,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return border;
     }
 
-    public J setBorder(AgBorderOptions<?> border) {
+    public @org.jspecify.annotations.NonNull J setBorder(AgBorderOptions<?> border) {
         this.border = border;
         return (J) this;
     }
@@ -98,7 +98,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return itemStyler;
     }
 
-    public J setItemStyler(String itemStyler) {
+    public @org.jspecify.annotations.NonNull J setItemStyler(String itemStyler) {
         this.itemStyler = itemStyler;
         return (J) this;
     }
@@ -109,13 +109,13 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
     }
 
     /** Set fill using a CSS color string. */
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = (Object) fill;
         return (J) this;
     }
 
     /** Set fill using a fill object (gradient/pattern/image). */
-    public J setFill(Object fill) {
+    public @org.jspecify.annotations.NonNull J setFill(Object fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -124,7 +124,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }
@@ -133,7 +133,7 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return cornerRadius;
     }
 
-    public J setCornerRadius(Integer cornerRadius) {
+    public @org.jspecify.annotations.NonNull J setCornerRadius(Integer cornerRadius) {
         this.cornerRadius = cornerRadius;
         return (J) this;
     }

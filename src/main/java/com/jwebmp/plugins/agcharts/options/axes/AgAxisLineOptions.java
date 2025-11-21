@@ -14,7 +14,7 @@ public class AgAxisLineOptions<J extends AgAxisLineOptions<J>> extends JavaScrip
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -23,7 +23,7 @@ public class AgAxisLineOptions<J extends AgAxisLineOptions<J>> extends JavaScrip
         return width;
     }
 
-    public J setWidth(Integer width) {
+    public @org.jspecify.annotations.NonNull J setWidth(Integer width) {
         this.width = width;
         return (J) this;
     }
@@ -32,7 +32,7 @@ public class AgAxisLineOptions<J extends AgAxisLineOptions<J>> extends JavaScrip
         return color;
     }
 
-    public J setColor(String color) {
+    public @org.jspecify.annotations.NonNull J setColor(String color) {
         this.color = color;
         return (J) this;
     }
@@ -41,7 +41,7 @@ public class AgAxisLineOptions<J extends AgAxisLineOptions<J>> extends JavaScrip
         return opacity;
     }
 
-    public J setOpacity(Double opacity) {
+    public @org.jspecify.annotations.NonNull J setOpacity(Double opacity) {
         this.opacity = opacity;
         return (J) this;
     }

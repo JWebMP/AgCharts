@@ -26,7 +26,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return enabled;
     }
 
-    public J setEnabled(Boolean enabled) {
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
         this.enabled = enabled;
         return (J) this;
     }
@@ -35,7 +35,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -44,7 +44,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -53,7 +53,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
@@ -62,7 +62,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -71,7 +71,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return capWidth;
     }
 
-    public J setCapWidth(Integer capWidth) {
+    public @org.jspecify.annotations.NonNull J setCapWidth(Integer capWidth) {
         this.capWidth = capWidth;
         return (J) this;
     }
@@ -80,7 +80,7 @@ public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScrip
         return capLength;
     }
 
-    public J setCapLength(Integer capLength) {
+    public @org.jspecify.annotations.NonNull J setCapLength(Integer capLength) {
         this.capLength = capLength;
         return (J) this;
     }

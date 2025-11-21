@@ -23,16 +23,16 @@ public class AgChartTheme<J extends AgChartTheme<J>> extends JavaScriptPart<J> {
     // --- getters/setters ---
     public Object getBaseTheme() { return baseTheme; }
     /** Set baseTheme using a string (e.g., "ag-vivid"). */
-    public J setBaseTheme(String baseTheme) { this.baseTheme = baseTheme; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setBaseTheme(String baseTheme) { this.baseTheme = baseTheme; return (J) this; }
     /** Set baseTheme using an enum value. */
-    public J setBaseTheme(AgChartThemeName baseTheme) { this.baseTheme = baseTheme != null ? baseTheme.toString() : null; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setBaseTheme(AgChartThemeName baseTheme) { this.baseTheme = baseTheme != null ? baseTheme.toString() : null; return (J) this; }
 
     public AgChartThemePalette<?> getPalette() { return palette; }
-    public J setPalette(AgChartThemePalette<?> palette) { this.palette = palette; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setPalette(AgChartThemePalette<?> palette) { this.palette = palette; return (J) this; }
 
     public AgChartThemeParams<?> getParams() { return params; }
-    public J setParams(AgChartThemeParams<?> params) { this.params = params; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setParams(AgChartThemeParams<?> params) { this.params = params; return (J) this; }
 
     public AgChartThemeOverrides<?> getOverrides() { return overrides; }
-    public J setOverrides(AgChartThemeOverrides<?> overrides) { this.overrides = overrides; return (J) this; }
+    public @org.jspecify.annotations.NonNull J setOverrides(AgChartThemeOverrides<?> overrides) { this.overrides = overrides; return (J) this; }
 }

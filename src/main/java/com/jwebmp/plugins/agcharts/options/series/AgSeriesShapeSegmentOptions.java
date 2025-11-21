@@ -39,7 +39,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return start;
     }
 
-    public J setStart(Object start) {
+    public @org.jspecify.annotations.NonNull J setStart(Object start) {
         this.start = start;
         return (J) this;
     }
@@ -48,7 +48,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return stop;
     }
 
-    public J setStop(Object stop) {
+    public @org.jspecify.annotations.NonNull J setStop(Object stop) {
         this.stop = stop;
         return (J) this;
     }
@@ -57,7 +57,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return stroke;
     }
 
-    public J setStroke(String stroke) {
+    public @org.jspecify.annotations.NonNull J setStroke(String stroke) {
         this.stroke = stroke;
         return (J) this;
     }
@@ -66,7 +66,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return strokeWidth;
     }
 
-    public J setStrokeWidth(Integer strokeWidth) {
+    public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) {
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
@@ -75,7 +75,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return strokeOpacity;
     }
 
-    public J setStrokeOpacity(Double strokeOpacity) {
+    public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) {
         this.strokeOpacity = strokeOpacity;
         return (J) this;
     }
@@ -84,7 +84,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return lineDash;
     }
 
-    public J setLineDash(List<Integer> lineDash) {
+    public @org.jspecify.annotations.NonNull J setLineDash(List<Integer> lineDash) {
         this.lineDash = lineDash;
         return (J) this;
     }
@@ -93,7 +93,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return lineDashOffset;
     }
 
-    public J setLineDashOffset(Integer lineDashOffset) {
+    public @org.jspecify.annotations.NonNull J setLineDashOffset(Integer lineDashOffset) {
         this.lineDashOffset = lineDashOffset;
         return (J) this;
     }
@@ -103,25 +103,25 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
     }
 
     /** Set a solid CSS color string. */
-    public J setFill(String fill) {
+    public @org.jspecify.annotations.NonNull J setFill(String fill) {
         this.fill = (Object) fill;
         return (J) this;
     }
 
     /** Set a gradient fill object. */
-    public J setFill(AgGradientColor<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgGradientColor<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set a pattern fill object. */
-    public J setFill(AgPatternFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgPatternFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
 
     /** Set an image fill object. */
-    public J setFill(AgImageFill<?> fill) {
+    public @org.jspecify.annotations.NonNull J setFill(AgImageFill<?> fill) {
         this.fill = fill;
         return (J) this;
     }
@@ -130,7 +130,7 @@ public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J
         return fillOpacity;
     }
 
-    public J setFillOpacity(Double fillOpacity) {
+    public @org.jspecify.annotations.NonNull J setFillOpacity(Double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return (J) this;
     }

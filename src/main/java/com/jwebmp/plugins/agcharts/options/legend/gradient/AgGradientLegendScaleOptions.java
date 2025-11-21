@@ -14,8 +14,8 @@ public class AgGradientLegendScaleOptions<J extends AgGradientLegendScaleOptions
     private Integer padding;
 
     public AgSeriesLabelOptions<?> getLabel() {return label;}
-    public J setLabel(AgSeriesLabelOptions<?> label) {this.label = label;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setLabel(AgSeriesLabelOptions<?> label) {this.label = label;return (J) this;}
 
     public Integer getPadding() {return padding;}
-    public J setPadding(Integer padding) {this.padding = padding;return (J) this;}
+    public @org.jspecify.annotations.NonNull J setPadding(Integer padding) {this.padding = padding;return (J) this;}
 }

@@ -29,7 +29,7 @@ public class AgChartOverlayOptions<J extends AgChartOverlayOptions<J>> extends J
         return text;
     }
 
-    public J setText(String text) {
+    public @org.jspecify.annotations.NonNull J setText(String text) {
         this.text = text;
         return (J) this;
     }
@@ -38,7 +38,7 @@ public class AgChartOverlayOptions<J extends AgChartOverlayOptions<J>> extends J
         return renderer;
     }
 
-    public J setRenderer(String renderer) {
+    public @org.jspecify.annotations.NonNull J setRenderer(String renderer) {
         this.renderer = renderer;
         return (J) this;
     }

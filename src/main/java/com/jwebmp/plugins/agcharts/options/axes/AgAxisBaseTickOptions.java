@@ -13,7 +13,7 @@ public class AgAxisBaseTickOptions<J extends AgAxisBaseTickOptions<J>> extends J
         return minSpacing;
     }
 
-    public J setMinSpacing(Integer minSpacing) {
+    public @org.jspecify.annotations.NonNull J setMinSpacing(Integer minSpacing) {
         this.minSpacing = minSpacing;
         return (J) this;
     }
@@ -22,7 +22,7 @@ public class AgAxisBaseTickOptions<J extends AgAxisBaseTickOptions<J>> extends J
         return maxSpacing;
     }
 
-    public J setMaxSpacing(Integer maxSpacing) {
+    public @org.jspecify.annotations.NonNull J setMaxSpacing(Integer maxSpacing) {
         this.maxSpacing = maxSpacing;
         return (J) this;
     }
@@ -31,7 +31,7 @@ public class AgAxisBaseTickOptions<J extends AgAxisBaseTickOptions<J>> extends J
         return count;
     }
 
-    public J setCount(Integer count) {
+    public @org.jspecify.annotations.NonNull J setCount(Integer count) {
         this.count = count;
         return (J) this;
     }
