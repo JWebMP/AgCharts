@@ -87,8 +87,8 @@ public class AgLineSeriesOptions<J extends AgLineSeriesOptions<J>> extends AgSer
     public @org.jspecify.annotations.NonNull J setNormalizedTo(Number normalizedTo) { this.normalizedTo = normalizedTo; return (J) this; }
 
     public String getId() { return id; }
-    /** Also sets the base seriesId for consistency. */
-    public @org.jspecify.annotations.NonNull J setId(String id) { this.id = id; setSeriesId(id); return (J) this; }
+    /** Sets the primary identifier for the series. */
+    public @org.jspecify.annotations.NonNull J setId(String id) { this.id = id; return (J) this; }
 
     public Object getContext() { return context; }
     public @org.jspecify.annotations.NonNull J setContext(Object context) { this.context = context; return (J) this; }

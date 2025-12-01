@@ -116,7 +116,7 @@ public class AgDonutSeriesOptions<J extends AgDonutSeriesOptions<J>> extends AgS
     public @org.jspecify.annotations.NonNull J setSectorLabelName(String sectorLabelName) { this.sectorLabelName = sectorLabelName; return (J) this; }
 
     public String getId() { return id; }
-    public @org.jspecify.annotations.NonNull J setId(String id) { this.id = id; setSeriesId(id); return (J) this; }
+    public @org.jspecify.annotations.NonNull J setId(String id) { this.id = id; return (J) this; }
 
     public List<?> getData() { return data; }
     public @org.jspecify.annotations.NonNull J setData(List<?> data) { this.data = data; return (J) this; }

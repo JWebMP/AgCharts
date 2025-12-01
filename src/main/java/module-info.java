@@ -17,6 +17,22 @@ module com.jwebmp.plugins.agcharts {
     exports com.jwebmp.plugins.agcharts.options.tooltip;
     exports com.jwebmp.plugins.agcharts.options.overlays;
     exports com.jwebmp.plugins.agcharts.options.navigator;
+    exports com.jwebmp.plugins.agcharts.options.highlight;
+    exports com.jwebmp.plugins.agcharts.options.animation;
+    exports com.jwebmp.plugins.agcharts.options.zoom;
+    exports com.jwebmp.plugins.agcharts.options.ranges;
+    exports com.jwebmp.plugins.agcharts.options.sync;
+    exports com.jwebmp.plugins.agcharts.options.contextmenu;
+    exports com.jwebmp.plugins.agcharts.options.datasource;
+    exports com.jwebmp.plugins.agcharts.options.keyboard;
+    exports com.jwebmp.plugins.agcharts.options.touch;
+    exports com.jwebmp.plugins.agcharts.options.listeners;
+    exports com.jwebmp.plugins.agcharts.options.formatter;
+    exports com.jwebmp.plugins.agcharts.options.container;
+    exports com.jwebmp.plugins.agcharts.options.data;
+    exports com.jwebmp.plugins.agcharts.options.annotations;
+    exports com.jwebmp.plugins.agcharts.options.initialstate;
+    exports com.jwebmp.plugins.agcharts.options.misc;
 
     requires com.jwebmp.client;
     requires com.jwebmp.core;
@@ -41,5 +57,21 @@ module com.jwebmp.plugins.agcharts {
     opens com.jwebmp.plugins.agcharts.options.tooltip to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
     opens com.jwebmp.plugins.agcharts.options.overlays to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
     opens com.jwebmp.plugins.agcharts.options.navigator to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.highlight to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.animation to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.zoom to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.ranges to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.sync to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.contextmenu to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.datasource to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.keyboard to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.touch to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.listeners to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.formatter to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.container to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.data to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.annotations to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.initialstate to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
+    opens com.jwebmp.plugins.agcharts.options.misc to com.google.guice, com.fasterxml.jackson.databind, com.jwebmp.core;
     opens com.jwebmp.plugins.agcharts.implementations to com.google.guice;
 }

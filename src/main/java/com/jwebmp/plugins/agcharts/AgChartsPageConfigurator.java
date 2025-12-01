@@ -27,7 +27,7 @@ import jakarta.validation.constraints.NotNull;
         pluginGroupId = "com.jwebmp.plugins",
         pluginArtifactId = "agcharts",
         pluginModuleName = "com.jwebmp.plugins.agcharts",
-        pluginLastUpdatedDate = "2025-09-23",
+        pluginLastUpdatedDate = "2025-12-02",
         pluginStatus = PluginStatus.Released
 )
 

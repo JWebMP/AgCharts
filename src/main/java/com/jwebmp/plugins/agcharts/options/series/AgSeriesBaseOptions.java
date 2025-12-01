@@ -18,11 +18,6 @@ import com.jwebmp.plugins.agcharts.options.tooltip.AgSeriesTooltipOptions;
 public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaScriptPart<J> {
     @com.fasterxml.jackson.annotation.JsonProperty("type")
     private String type;
-    /**
-     * @deprecated AG Charts 12.2 uses {@code id}. Prefer the concrete series {@code setId(...)} helper instead.
-     */
-    @Deprecated
-    private String seriesId;
 
     /** Fill for the series: supports solid color string, gradient, pattern, or image objects. */
     private Object fill;
@@ -59,22 +54,7 @@ public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaS
         return (J) this;
     }
 
-    /**
-     * @deprecated AG Charts 12.2 uses {@code id}. Prefer the concrete series {@code setId(...)} helper instead.
-     */
-    @Deprecated
-    public String getSeriesId() {
-        return seriesId;
-    }
 
-    /**
-     * @deprecated AG Charts 12.2 uses {@code id}. Prefer the concrete series {@code setId(...)} helper instead.
-     */
-    @Deprecated
-    public @org.jspecify.annotations.NonNull J setSeriesId(String seriesId) {
-        this.seriesId = seriesId;
-        return (J) this;
-    }
 
     public Object getFill() {
         return fill;
