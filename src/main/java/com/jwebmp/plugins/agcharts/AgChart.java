@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.agcharts;
 
 import com.guicedee.client.IGuiceContext;
-import com.guicedee.guicedservlets.websockets.options.IGuicedWebSocket;
+import com.guicedee.client.services.websocket.IGuicedWebSocket;
 import com.jwebmp.core.base.ajax.AjaxCall;
 import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.base.angular.client.DynamicData;
@@ -18,16 +18,12 @@ import com.jwebmp.core.base.angular.client.services.EventBusService;
 import com.jwebmp.core.base.angular.client.services.interfaces.AnnotationUtils;
 import com.jwebmp.core.base.angular.client.services.interfaces.INgComponent;
 import com.jwebmp.core.base.angular.implementations.WebSocketAbstractCallReceiver;
-import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.DivSimple;
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
 import io.smallrye.mutiny.Uni;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Base AG Charts component for JWebMP.
@@ -204,7 +200,7 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
     public List<String> styles()
     {
         List<String> out = INgComponent.super.styles();
-        out.add(":host { display: block; position: relative; }");
+        out.add(":host { display: block; position: relative; width:100%;height:100% }");
         return out;
     }
 
