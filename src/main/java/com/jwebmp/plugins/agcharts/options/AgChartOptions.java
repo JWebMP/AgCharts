@@ -71,18 +71,33 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
      * Global formatter function applied to all textual elements. Raw JS string, e.g.:
      * <pre>function(p){ return p.value + '%'; }</pre>
      */
+    /**
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
+     * Prefer per-option formatters or add a typed formatter property instead of raw JS strings.
+     */
+    @Deprecated
     @com.fasterxml.jackson.annotation.JsonIgnore
     private String formatterFunction;
 
     /**
      * Per-property formatter callbacks (as raw JS) for x, y, size, label, etc.
      */
+    /**
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
+     * Prefer the new formatter API or per-option formatters.
+     */
+    @Deprecated
     @com.fasterxml.jackson.annotation.JsonIgnore
     private AgChartPropertyFormatterFunctions<?> formatterFunctions;
 
     /**
      * Per-property formatter static format strings for x, y, size, label, etc.
      */
+    /**
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
+     * Prefer the new formatter API or per-option formatters.
+     */
+    @Deprecated
     @com.fasterxml.jackson.annotation.JsonIgnore
     private AgChartPropertyFormatterFormats<?> formatterFormats;
 
@@ -303,7 +318,10 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     /**
      * Sets a global formatter function (raw JS). This clears any property-based formatter mappings.
+     *
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
      */
+    @Deprecated
     public @org.jspecify.annotations.NonNull J setFormatterFunction(String formatterFunction)
     {
         this.formatterFunction = formatterFunction;
@@ -320,7 +338,10 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     /**
      * Sets per-property formatter callbacks (raw JS per property). This clears the global formatter and string formats.
+     *
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
      */
+    @Deprecated
     public @org.jspecify.annotations.NonNull J setFormatterFunctions(AgChartPropertyFormatterFunctions<?> formatterFunctions)
     {
         this.formatterFunctions = formatterFunctions;
@@ -336,7 +357,10 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
 
     /**
      * Sets per-property formatter format strings. This clears the global formatter and function mappings.
+     *
+     * @deprecated AG Charts 12.2 replaced this with chart-level {@code formatter} (FormatterConfiguration).
      */
+    @Deprecated
     public @org.jspecify.annotations.NonNull J setFormatterFormats(AgChartPropertyFormatterFormats<?> formatterFormats)
     {
         this.formatterFormats = formatterFormats;

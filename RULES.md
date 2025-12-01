@@ -12,6 +12,7 @@
   - Base Angular + version override: `rules/generative/language/angular/README.md`, `rules/generative/language/angular/angular-20.rules.md`
   - TypeScript base: `rules/generative/language/typescript/README.md`
   - JWebMP client and TypeScript integration: `rules/generative/frontend/jwebmp/client/README.md`, `rules/generative/frontend/jwebmp/typescript/README.md`
+  - AgCharts wrapper rules (this library): `rules/generative/frontend/jwebmp/agcharts/README.md`
   - Angular Awesome (not selected) remains out of scope unless explicitly added later.
 - Backend / Reactive / GuicedEE
   - GuicedEE + client focus: `rules/generative/backend/guicedee/README.md`, `rules/generative/backend/guicedee/client/README.md`

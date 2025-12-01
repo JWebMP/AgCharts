@@ -5,6 +5,7 @@ Use these pointers to apply modular rules to this project. Always load `PACT.md`
 ## Frontend (Angular 20 + JWebMP)
 - Angular base and override: follow `rules/generative/language/angular/README.md` with version specifics in `rules/generative/language/angular/angular-20.rules.md`.
 - TypeScript integration and client packaging: `rules/generative/language/typescript/README.md`, `rules/generative/frontend/jwebmp/client/README.md`, `rules/generative/frontend/jwebmp/typescript/README.md`.
+- AgCharts wrapper rules: start at `rules/generative/frontend/jwebmp/agcharts/README.md`, then apply `angular-integration`, `options-and-styling`, and `data-and-events` as needed.
 - Component flow reference: `docs/architecture/sequence-initial-load.md`, `docs/architecture/sequence-data-update.md`, and `docs/architecture/c4-component-agcharts.md` for websocket listener naming and signal wiring.
 
 ## Backend / Reactive

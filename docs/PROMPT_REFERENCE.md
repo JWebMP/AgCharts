@@ -15,6 +15,7 @@ Use this file to prime any AI assistant before working in the repo.
 - Behavioral/technical rules + forward-only: `rules/RULES.md` sections 4, 5, and Forward-Only.
 - Language/framework: Java 25 (`rules/generative/language/java/java-25.rules.md`), Angular base + 20 override (`rules/generative/language/angular/README.md`, `rules/generative/language/angular/angular-20.rules.md`), TypeScript (`rules/generative/language/typescript/README.md`).
 - JWebMP and GuicedEE: `rules/generative/frontend/jwebmp/client/README.md`, `rules/generative/frontend/jwebmp/typescript/README.md`, `rules/generative/backend/guicedee/README.md`, `rules/generative/backend/guicedee/client/README.md`, `rules/generative/backend/vertx/README.md`.
+- AgCharts topic rules: `rules/generative/frontend/jwebmp/agcharts/README.md` (+ glossary and modular rules in that folder); enterprise add-ons at `rules/generative/frontend/jwebmp/agcharts-enterprise/README.md`.
 - Fluent API (CRTP): `rules/generative/backend/fluent-api/GLOSSARY.md`.
 - CI/CD: `rules/generative/platform/ci-cd/README.md`, provider `rules/generative/platform/ci-cd/providers/github-actions.md`.
 

@@ -9,6 +9,7 @@
 - Language: `rules/generative/language/java/GLOSSARY.md`, `rules/generative/language/typescript/GLOSSARY.md`
 - Angular: `rules/generative/language/angular/GLOSSARY.md` plus `rules/generative/language/angular/angular-20.rules.md` for version-specific guidance
 - JWebMP: `rules/generative/frontend/jwebmp/client/GLOSSARY.md`, `rules/generative/frontend/jwebmp/typescript/GLOSSARY.md`
+- AgCharts (JWebMP wrapper): `rules/generative/frontend/jwebmp/agcharts/GLOSSARY.md`
 - GuicedEE: `rules/generative/backend/guicedee/GLOSSARY.md`, `rules/generative/backend/guicedee/client/GLOSSARY.md`
 - Reactive/Vert.x: `rules/generative/backend/vertx/GLOSSARY.md`
 - Fluent API (CRTP): `rules/generative/backend/fluent-api/GLOSSARY.md`
