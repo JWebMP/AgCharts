@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "mermaid": {
+      "type": "http",
+      "uri": "https://mcp.mermaidchart.com/mcp"
+    },
+    "ag-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "ag-mcp",
+        "${input:stdio-arg}"
+      ],
+      "env": {}
+    }
+  }
+}
