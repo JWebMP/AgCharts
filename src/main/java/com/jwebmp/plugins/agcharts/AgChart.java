@@ -155,18 +155,19 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
     }
 
     /**
-     * Server-side: provide the initial chart options, reactively.
+     * Server-side: provide the initial chart options, reactively, with access to the
+     * AjaxCall and AjaxResponse context.
      */
-    public abstract Uni<AgChartOptions<?>> getInitialOptions();
+    public abstract Uni<AgChartOptions<?>> getInitialOptions(AjaxCall<?> call, AjaxResponse<?> response);
 
     /**
-     * Server-side: provide initial chart data separately from options (optional), reactively.
+     * Server-side: provide initial chart data separately from options (optional), reactively,
+     * with access to the AjaxCall and AjaxResponse context.
      * If the emitted item is null, no data message will be sent unless the server pushes later.
      */
-    public Uni<Object> getInitialData()
+    public Uni<Object> getInitialData(AjaxCall<?> call, AjaxResponse<?> response)
     {
-        return Uni.createFrom()
-                  .nullItem();
+        return Uni.createFrom().nullItem();
     }
 
     protected String getListenerName()
@@ -236,7 +237,7 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
         public io.smallrye.mutiny.Uni<AjaxResponse<?>> action(AjaxCall<?> call, AjaxResponse<?> response)
         {
             return IGuiceContext.get(actionClass)
-                                .getInitialOptions()
+                                .getInitialOptions(call, response)
                                 .onItem()
                                 .transform(initial -> {
                                     if (initial == null)
@@ -281,7 +282,7 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
         public io.smallrye.mutiny.Uni<AjaxResponse<?>> action(AjaxCall<?> call, AjaxResponse<?> response)
         {
             return IGuiceContext.get(actionClass)
-                                .getInitialData()
+                                .getInitialData(call, response)
                                 .onItem()
                                 .transform(data -> {
                                     DynamicData dd = new DynamicData().addData(data);

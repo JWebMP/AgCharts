@@ -48,7 +48,7 @@ public class AgScatterChart<J extends AgScatterChart<J>> extends AgChart<J>
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             AgScatterSeriesOptions<?> scatter = new AgScatterSeriesOptions<>()

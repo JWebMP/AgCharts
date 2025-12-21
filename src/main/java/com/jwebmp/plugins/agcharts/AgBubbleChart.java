@@ -56,7 +56,7 @@ public class AgBubbleChart<J extends AgBubbleChart<J>> extends AgChart<J>
     }
 
     @Override
-    public io.smallrye.mutiny.Uni<AgChartOptions<?>> getInitialOptions()
+    public io.smallrye.mutiny.Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return io.smallrye.mutiny.Uni.createFrom().item(() -> {
             AgBubbleSeriesOptions<?> bubble = new AgBubbleSeriesOptions<>()

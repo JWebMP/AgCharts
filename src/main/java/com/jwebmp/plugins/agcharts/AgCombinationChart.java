@@ -76,7 +76,7 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
     }
 
     @Override
-    public Uni<AgChartOptions<?>> getInitialOptions()
+    public Uni<AgChartOptions<?>> getInitialOptions(com.jwebmp.core.base.ajax.AjaxCall<?> call, com.jwebmp.core.base.ajax.AjaxResponse<?> response)
     {
         return Uni.createFrom().item(() -> {
             AgChartOptions<?> options = new AgChartOptions<>();
