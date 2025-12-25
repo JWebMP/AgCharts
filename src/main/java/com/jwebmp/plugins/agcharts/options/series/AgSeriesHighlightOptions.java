@@ -24,6 +24,9 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
     /** Styles for all other series when one is highlighted. */
     private AgSeriesHighlightStyleOptions<?> unhighlightedSeries;
 
+    /** The opacity of the series when it is dimmed. */
+    private Double dimOpacity;
+
     public Boolean getBringToFront() {
         return bringToFront;
     }
@@ -66,6 +69,15 @@ public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> ext
 
     public @org.jspecify.annotations.NonNull J setUnhighlightedSeries(AgSeriesHighlightStyleOptions<?> unhighlightedSeries) {
         this.unhighlightedSeries = unhighlightedSeries;
+        return (J) this;
+    }
+
+    public Double getDimOpacity() {
+        return dimOpacity;
+    }
+
+    public @org.jspecify.annotations.NonNull J setDimOpacity(Double dimOpacity) {
+        this.dimOpacity = dimOpacity;
         return (J) this;
     }
 }

@@ -5,9 +5,19 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisBaseTickOptions<J extends AgAxisBaseTickOptions<J>> extends JavaScriptPart<J> {
+    private Boolean enabled;
     private Integer minSpacing;
     private Integer maxSpacing;
     private Integer count;
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+        return (J) this;
+    }
 
     public Integer getMinSpacing() {
         return minSpacing;

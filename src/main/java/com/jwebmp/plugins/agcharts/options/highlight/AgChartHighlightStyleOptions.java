@@ -15,6 +15,9 @@ public class AgChartHighlightStyleOptions<J extends AgChartHighlightStyleOptions
     
     /** Fill opacity (0-1) for highlighted state. */
     private Double fillOpacity;
+				
+    /** Fill opacity (0-1) for highlighted state. */
+    private Double dimOpacity;
     
     /** Stroke color for highlighted state. */
     private String stroke;
@@ -69,4 +72,13 @@ public class AgChartHighlightStyleOptions<J extends AgChartHighlightStyleOptions
         this.strokeWidth = strokeWidth;
         return (J) this;
     }
+				
+				public Double getDimOpacity() {
+								return dimOpacity;
+				}
+				
+				public @org.jspecify.annotations.NonNull J setDimOpacity(Double dimOpacity) {
+								this.dimOpacity = dimOpacity;
+								return (J) this;
+				}
 }

@@ -22,6 +22,9 @@ public class AgChartHighlightOptions<J extends AgChartHighlightOptions<J>> exten
     /** Styles applied to series not containing the highlighted item. */
     private AgChartHighlightStyleOptions<?> unhighlightedSeries;
 
+    /** The opacity of the series when it is dimmed. */
+    private Double dimOpacity;
+
     public AgChartHighlightStyleOptions<?> getHighlightedItem() {
         return highlightedItem;
     }
@@ -55,6 +58,15 @@ public class AgChartHighlightOptions<J extends AgChartHighlightOptions<J>> exten
 
     public @org.jspecify.annotations.NonNull J setUnhighlightedSeries(AgChartHighlightStyleOptions<?> unhighlightedSeries) {
         this.unhighlightedSeries = unhighlightedSeries;
+        return (J) this;
+    }
+
+    public Double getDimOpacity() {
+        return dimOpacity;
+    }
+
+    public @org.jspecify.annotations.NonNull J setDimOpacity(Double dimOpacity) {
+        this.dimOpacity = dimOpacity;
         return (J) this;
     }
 }

@@ -26,6 +26,7 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
 
     private Integer size;         // marker size, where applicable
     private Double opacity;       // overall opacity for series/markers
+    private Double dimOpacity;
 
     public Object getFill() {
         return fill;
@@ -105,6 +106,15 @@ public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptio
 
     public @org.jspecify.annotations.NonNull J setOpacity(Double opacity) {
         this.opacity = opacity;
+        return (J) this;
+    }
+
+    public Double getDimOpacity() {
+        return dimOpacity;
+    }
+
+    public @org.jspecify.annotations.NonNull J setDimOpacity(Double dimOpacity) {
+        this.dimOpacity = dimOpacity;
         return (J) this;
     }
 }

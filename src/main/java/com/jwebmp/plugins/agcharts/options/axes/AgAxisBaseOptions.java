@@ -11,6 +11,7 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScriptPart<J> {
     private String type; // axis type identifier
+    private Boolean enabled;
     private AgCartesianAxisPosition position;
     private List<String> keys;
     private Boolean reverse;
@@ -41,6 +42,15 @@ public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScrip
 
     public @org.jspecify.annotations.NonNull J setType(String type) {
         this.type = type;
+        return (J) this;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
+        this.enabled = enabled;
         return (J) this;
     }
 

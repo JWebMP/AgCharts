@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.plugins.agcharts.options.axes.AgAxesOptions;
 import com.jwebmp.plugins.agcharts.options.axes.AgAxisBaseOptions;
 import com.jwebmp.plugins.agcharts.options.legend.AgChartLegendOptions;
 import com.jwebmp.plugins.agcharts.options.series.AgSeriesBaseOptions;
@@ -31,22 +32,22 @@ import com.jwebmp.plugins.agcharts.options.misc.AgChartMiscOptions;
 import java.util.List;
 
 /**
- * Root Chart options for AG Charts 12.2.0 (Community).
+ * Root Chart options for AG Charts 13.0.0 (Community).
  * <p>
  * Aggregates chart-level configuration for axes, series, legend, tooltip, theme, locale, overlays, navigator,
- * gradient legend, and all 23 modern AG Charts 12.2 features (highlight, animation, zoom, ranges, sync, contextMenu, 
+ * gradient legend, and all 23 modern AG Charts 13 features (highlight, animation, zoom, ranges, sync, contextMenu, 
  * dataSource, keyboard, touch, listeners, formatter, container, data, annotations, initialState, misc).
  * <p>
  * All properties are optional and follow CRTP fluent setters for builder-like syntax.
  * <p>
- * Minimum supported version: AG Charts 12.2.0. No backwards compatibility with earlier versions.
+ * Minimum supported version: AG Charts 13.0.0. No backwards compatibility with earlier versions.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE)
 public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<J>
 {
     // --- Core Chart Elements ---
-    private List<AgAxisBaseOptions<?>> axes;
+    private AgAxesOptions<?> axes;
     private AgChartLegendOptions<?> legend;
     private List<AgSeriesBaseOptions<?>> series;
     private Object theme;
@@ -70,7 +71,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     private AgChartCaptionOptions<?> subtitle;
     private AgChartCaptionOptions<?> footnote;
 
-    // --- NEW: All 23 AG Charts 12.2.0 Options ---
+    // --- NEW: All 23 AG Charts 13.0.0 Options ---
     private AgChartHighlightOptions<?> highlight;
     private AgChartAnimationOptions<?> animation;
     private AgChartZoomOptions<?> zoom;
@@ -89,8 +90,17 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     private AgChartMiscOptions<?> misc;
 
     // ===== GETTERS / SETTERS =====
-    public List<AgAxisBaseOptions<?>> getAxes() { return axes; }
-    public @org.jspecify.annotations.NonNull J setAxes(List<AgAxisBaseOptions<?>> axes) { this.axes = axes; return (J) this; }
+    public AgAxesOptions<?> getAxes() {
+        if (axes == null) {
+            axes = new AgAxesOptions<>();
+        }
+        return axes;
+    }
+
+    public @org.jspecify.annotations.NonNull J setAxes(AgAxesOptions<?> axes) {
+        this.axes = axes;
+        return (J) this;
+    }
 
     public AgChartLegendOptions<?> getLegend() { return legend; }
     public @org.jspecify.annotations.NonNull J setLegend(AgChartLegendOptions<?> legend) { this.legend = legend; return (J) this; }
@@ -148,7 +158,7 @@ public class AgChartOptions<J extends AgChartOptions<J>> extends JavaScriptPart<
     public AgChartCaptionOptions<?> getFootnote() { return footnote; }
     public @org.jspecify.annotations.NonNull J setFootnote(AgChartCaptionOptions<?> footnote) { this.footnote = footnote; return (J) this; }
 
-    // --- NEW: All 23 AG Charts 12.2.0 Options Getters/Setters ---
+    // --- NEW: All 23 AG Charts 13.0.0 Options Getters/Setters ---
     public AgChartHighlightOptions<?> getHighlight() { return highlight; }
     public @org.jspecify.annotations.NonNull J setHighlight(AgChartHighlightOptions<?> highlight) { this.highlight = highlight; return (J) this; }
 

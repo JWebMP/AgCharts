@@ -1,6 +1,7 @@
 package com.jwebmp.plugins.agcharts;
 
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
+import com.jwebmp.plugins.agcharts.options.axes.AgAxesOptions;
 import com.jwebmp.plugins.agcharts.options.axes.AgAxisBaseOptions;
 import com.jwebmp.plugins.agcharts.options.series.AgSeriesBaseOptions;
 import io.smallrye.mutiny.Uni;
@@ -20,17 +21,17 @@ import java.util.List;
  *       .addSeries(new AgBarSeriesOptions<>()
  *           .setXKey("year").setYKey("men"))
  *       .addSeries(new AgLineSeriesOptions<>()
- *           .setXKey("year").setYKey("portions"))
- *       .setAxes(List.of(
- *           new AgCategoryAxisOptions<>().setPosition(AgCartesianAxisPosition.BOTTOM),
- *           new AgNumberAxisOptions<>().setPosition(AgCartesianAxisPosition.LEFT).setKeys(List.of("men")),
- *           new AgNumberAxisOptions<>().setPosition(AgCartesianAxisPosition.RIGHT).setKeys(List.of("portions"))
- *       ));
+ *           .setXKey("year").setYKey("portions"));
+ *   chart.getAxes()
+ *       .setCategory(new AgCategoryAxisOptions<>().setPosition(AgCartesianAxisPosition.BOTTOM))
+ *       .setNumber(new AgNumberAxisOptions<>().setPosition(AgCartesianAxisPosition.LEFT).setKeys(List.of("men")));
+ *   // Additional axes can be configured similarly.
+ * </code>
  */
 public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart<J>
 {
     private final List<AgSeriesBaseOptions<?>> series = new ArrayList<>();
-    private List<AgAxisBaseOptions<?>> axes; // optional
+    private AgAxesOptions<?> axes; // optional
 
     public AgCombinationChart(String id)
     {
@@ -59,7 +60,7 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
     }
 
     /** Optional: provide axes for primary/secondary configuration and customisation. */
-    public @org.jspecify.annotations.NonNull J setAxes(List<AgAxisBaseOptions<?>> axes)
+    public @org.jspecify.annotations.NonNull J setAxes(AgAxesOptions<?> axes)
     {
         this.axes = axes;
         return (J) this;
@@ -70,8 +71,12 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
         return series;
     }
 
-    public List<AgAxisBaseOptions<?>> getAxes()
+    public AgAxesOptions<?> getAxes()
     {
+        if (axes == null)
+        {
+            axes = new AgAxesOptions<>();
+        }
         return axes;
     }
 
@@ -84,7 +89,7 @@ public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart
             {
                 options.setSeries(series);
             }
-            if (axes != null && !axes.isEmpty())
+            if (axes != null)
             {
                 options.setAxes(axes);
             }

@@ -26,6 +26,12 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
     /** Collision avoidance master switch (default true in AG Charts). */
     private Boolean avoidCollisions;
 
+    /**
+     * Minimum gap in pixels between labels before skipping occurs.
+     * Alias for minSpacing in some AG Charts versions.
+     */
+    private Integer minGap;
+
     /** Wrapping strategy for labels. */
     private AgAxisLabelWrapping wrapping;
 
@@ -135,6 +141,15 @@ public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelO
 
     public @org.jspecify.annotations.NonNull J setAvoidCollisions(Boolean avoidCollisions) {
         this.avoidCollisions = avoidCollisions;
+        return (J) this;
+    }
+
+    public Integer getMinGap() {
+        return minGap;
+    }
+
+    public @org.jspecify.annotations.NonNull J setMinGap(Integer minGap) {
+        this.minGap = minGap;
         return (J) this;
     }
 
