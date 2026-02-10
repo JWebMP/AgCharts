@@ -60,7 +60,15 @@ public class AgBarSeriesOptions<J extends AgBarSeriesOptions<J>> extends AgSerie
     private Integer cornerRadius; // rounded corners
     private Double fillOpacity;
     private String stroke;
-    private Integer strokeWidth;
+    /**
+     * Stroke width for bars.
+     * <p>
+     * Supports both numeric values and raw JavaScript expressions via JSON raw value serialization.
+     * Use setStrokeWidth(Integer) for fixed numeric widths, or setStrokeWidthRaw(String) to embed
+     * a JS expression (e.g., "currentStatus === 'success' ? 2 : 1").
+     */
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    private Object strokeWidth;
     private Double strokeOpacity;
     private List<Integer> lineDash;
     private Integer lineDashOffset;
@@ -149,8 +157,11 @@ public class AgBarSeriesOptions<J extends AgBarSeriesOptions<J>> extends AgSerie
     public String getStroke() { return stroke; }
     public @org.jspecify.annotations.NonNull J setStroke(String stroke) { this.stroke = stroke; return (J) this; }
 
-    public Integer getStrokeWidth() { return strokeWidth; }
+    public Integer getStrokeWidth() { return strokeWidth instanceof Integer ? (Integer) strokeWidth : null; }
+    /** Set a fixed numeric stroke width (pixels). */
     public @org.jspecify.annotations.NonNull J setStrokeWidth(Integer strokeWidth) { this.strokeWidth = strokeWidth; return (J) this; }
+    /** Set a raw JavaScript expression for stroke width, serialized unquoted. */
+    public @org.jspecify.annotations.NonNull J setStrokeWidthRaw(String jsExpression) { this.strokeWidth = jsExpression; return (J) this; }
 
     public Double getStrokeOpacity() { return strokeOpacity; }
     public @org.jspecify.annotations.NonNull J setStrokeOpacity(Double strokeOpacity) { this.strokeOpacity = strokeOpacity; return (J) this; }

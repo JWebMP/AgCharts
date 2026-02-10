@@ -11,10 +11,15 @@ import com.jwebmp.plugins.agcharts.options.legend.AgPadding;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends JavaScriptPart<J> {
+    /** Whether labels are rendered. */
+    private Boolean enabled;
     private Integer fontSize;
     private String fontFamily;
     private String fontWeight;
     private String color;
+
+    /** Placement for labels where supported (e.g., bar/column): e.g., "inside-center". */
+    private String placement;
 
     /** Background fill for the label box: CSS color string or fill object (gradient/pattern/image). */
     private Object fill;
@@ -32,6 +37,19 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
     /** Per-item label styler: function(params){ return { color: ..., fontSize: ... }; } */
     @JsonRawValue
     private String itemStyler;
+
+    /** Formatter function: function(params){ return string; } */
+    @JsonRawValue
+    private String formatter;
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public @org.jspecify.annotations.NonNull J setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+        return (J) this;
+    }
 
     public Integer getFontSize() {
         return fontSize;
@@ -69,6 +87,16 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
         return (J) this;
     }
 
+    public String getPlacement() {
+        return placement;
+    }
+
+    /** Set label placement string (e.g., "inside-center"). */
+    public @org.jspecify.annotations.NonNull J setPlacement(String placement) {
+        this.placement = placement;
+        return (J) this;
+    }
+
     public Object getPadding() {
         return padding;
     }
@@ -100,6 +128,16 @@ public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends Jav
 
     public @org.jspecify.annotations.NonNull J setItemStyler(String itemStyler) {
         this.itemStyler = itemStyler;
+        return (J) this;
+    }
+
+    public String getFormatter() {
+        return formatter;
+    }
+
+    /** Set raw JS formatter function string. Will be serialized as-is (unquoted). */
+    public @org.jspecify.annotations.NonNull J setFormatter(String formatter) {
+        this.formatter = formatter;
         return (J) this;
     }
 
