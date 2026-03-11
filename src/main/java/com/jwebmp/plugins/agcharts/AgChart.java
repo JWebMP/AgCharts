@@ -17,6 +17,7 @@ import com.jwebmp.core.base.angular.client.annotations.structures.NgSignal;
 import com.jwebmp.core.base.angular.client.services.EventBusService;
 import com.jwebmp.core.base.angular.client.services.interfaces.AnnotationUtils;
 import com.jwebmp.core.base.angular.client.services.interfaces.INgComponent;
+import com.jwebmp.core.base.angular.components.NgIf;
 import com.jwebmp.core.base.angular.implementations.WebSocketAbstractCallReceiver;
 import com.jwebmp.core.base.html.DivSimple;
 import com.jwebmp.plugins.agcharts.options.AgChartOptions;
@@ -137,6 +138,8 @@ import java.util.Set;
 
 public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> implements INgComponent<J>
 {
+    private NgIf ngIfWrapper;
+
     public AgChart()
     {
         super();
@@ -147,11 +150,27 @@ public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> impleme
         setID(id);
         setTag("ag-charts");
         addAttribute("[options]", "chartOptions()");
-        addAttribute("*ngIf", "chartReady() && chartOptions()");
+        ngIfWrapper = new NgIf("chartReady() && chartOptions()");
 
         addConfiguration(AnnotationUtils.getNgField("readonly listenerName = '" + getID() + "';",false,true));
         addConfiguration(AnnotationUtils.getNgField("readonly clazzName = '" + getClass().getCanonicalName() + "';",false,true));
         registerWebSocketListeners();
+    }
+
+    @Override
+    protected StringBuilder renderHTML(int tabCount)
+    {
+        if (ngIfWrapper != null)
+        {
+            NgIf wrapper = ngIfWrapper;
+            ngIfWrapper = null;
+            wrapper.add(this);
+            StringBuilder result = new StringBuilder(wrapper.toString(tabCount));
+            wrapper.getChildren().clear();
+            ngIfWrapper = wrapper;
+            return result;
+        }
+        return super.renderHTML(tabCount);
     }
 
     /**
