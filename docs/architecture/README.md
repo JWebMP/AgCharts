@@ -5,7 +5,6 @@
 - Stage policy: docs-as-code; diagrams are Mermaid sources stored here (no images committed). Stage gates are auto-approved per blanket approval but still traced through links below.
 - Trust and threat notes: primary boundary is browser ↔ EventBus websocket ↔ server receivers; validate payload shapes before merging; enterprise package licensing handled by host app.
 - Dependency map (high level): JWebMP server (Guice + Vert.x EventBus) ↔ generated Angular 20 client ↔ `ag-charts-angular` + `ag-charts-community`/`ag-charts-enterprise` npm packages; host services supply data/options.
-- Glossary composition: topic-first with `rules/generative/frontend/jwebmp/agcharts/GLOSSARY.md` linked from root `GLOSSARY.md`; avoid redefining terms elsewhere.
 
 Artifacts
 - C4 Context — `./c4-context.md`
@@ -14,5 +13,7 @@ Artifacts
 - Sequences — `./sequence-initial-load.md`, `./sequence-data-update.md`
 - ERD (chart option model) — `./erd-chart-model.md`
 
-Traceability
-- Links referenced by `docs/PROMPT_REFERENCE.md`, `PACT.md`, `RULES.md`, `GUIDES.md`, and `IMPLEMENTATION.md` to close loops.
+References
+- **[AG Charts Documentation](https://charts.ag-grid.com/)** — Official AG Charts documentation
+- **[JWebMP Home](https://jwebmp.com/)** — JWebMP framework documentation
+- **[Source Code](../../src/main/java/)** — Current implementation
