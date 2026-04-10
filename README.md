@@ -12,9 +12,9 @@
 ![AG Charts](https://img.shields.io/badge/AG_Charts-13.1.0-0084FF)
 ![JWebMP](https://img.shields.io/badge/JWebMP-2.0-0A7)
 
-Enterprise-grade charting library integration for JWebMP with Angular 20. Provides CRTP-based fluent Java API for AG Charts 13.1.0 with full TypeScript type generation, reactive data binding, and server-side chart configuration.
+Enterprise-grade charting library integration for JWebMP with Angular 21. Provides CRTP-based fluent Java API for AG Charts 13.1.0 with full TypeScript type generation, reactive data binding, and server-side chart configuration.
 
-Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 20](https://angular.dev/) · [JWebMP Core](https://jwebmp.com/) · JPMS module `com.jwebmp.plugins.agcharts` · Java 25+
+Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 21](https://angular.dev/) · [JWebMP Core](https://jwebmp.com/) · JPMS module `com.jwebmp.plugins.agcharts` · Java 25+
 
 **Version: 13.1.0** — Full AG Charts 13.1.0 API compliance with 38/38 chart options implemented.
 
@@ -24,7 +24,7 @@ Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 20](https:/
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>agcharts</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.0-RC1</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 20](https:/
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:agcharts:2.0.0-SNAPSHOT")
+implementation("com.jwebmp.plugins:agcharts:2.0.0-RC1")
 ```
 </details>
 
@@ -53,7 +53,7 @@ The plugin automatically includes AG Charts dependencies:
 
 - **Complete AG Charts 13.1.0 API** — All 38 official chart options implemented with type-safe Java models
 - **CRTP Fluent Builders** — Type-safe, self-referencing fluent setters for intuitive chart configuration
-- **Angular 20 Integration** — Seamless integration with Angular components via JWebMP annotations
+- **Angular 21 Integration** — Seamless integration with Angular components via JWebMP annotations
 - **TypeScript Type Generation** — Automatic TypeScript interface generation from Java models
 - **Reactive Data Binding** — Real-time chart updates via Angular data bindings and observables
 - **Server-Side Configuration** — Define charts in Java with automatic client-side rendering
@@ -259,7 +259,7 @@ AgChartOptions<MyComponent> options = new AgChartOptions<>(this)
                            │ Compilation
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              Angular 20 Application (TypeScript)             │
+│              Angular 21 Application (TypeScript)             │
 │                                                              │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │    chart-component.component.ts                      │   │
@@ -638,6 +638,6 @@ Issues and pull requests are welcome.
 
 ---
 
-**JWebMP AG Charts** — Enterprise-grade charting for Java web applications with Angular 20.
+**JWebMP AG Charts** — Enterprise-grade charting for Java web applications with Angular 21.
 
-Built with ❤️ using Java 25+, AG Charts 13.1.0, Angular 20, and JPMS.
+Built with ❤️ using Java 25+, AG Charts 13.1.0, Angular 21, and JPMS.
