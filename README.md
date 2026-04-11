@@ -24,7 +24,7 @@ Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 21](https:/
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>agcharts</artifactId>
-  <version>2.0.0-RC3</version>
+  <version>2.0.0-RC4</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 21](https:/
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.jwebmp.plugins:agcharts:2.0.0-RC3")
+implementation("com.jwebmp.plugins:agcharts:2.0.0-RC4")
 ```
 </details>
 
