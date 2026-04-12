@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Aggregates overrides per series type. Expand with other types as needed.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartThemeOverrides<J extends AgChartThemeOverrides<J>> extends JavaScriptPart<J> {

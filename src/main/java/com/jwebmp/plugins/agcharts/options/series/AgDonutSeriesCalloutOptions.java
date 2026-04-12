@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Callout line options for Donut series labels.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutSeriesCalloutOptions<J extends AgDonutSeriesCalloutOptions<J>> extends JavaScriptPart<J> {

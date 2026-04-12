@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Grid line options for axes, including alternating band shading support.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisGridLineOptions<J extends AgAxisGridLineOptions<J>> extends JavaScriptPart<J> {

@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Simple border options for the legend container.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgLegendBorderOptions<J extends AgLegendBorderOptions<J>> extends JavaScriptPart<J> {

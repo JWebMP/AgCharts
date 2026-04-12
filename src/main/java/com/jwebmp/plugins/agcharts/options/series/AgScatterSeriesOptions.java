@@ -14,6 +14,7 @@ import java.util.List;
  * names, title, identity, data/visibility/legend, event listeners, error bars,
  * highlighting, tooltip, maxRenderedItems, and marker styling at series level
  * (size/shape/fill/stroke etc.).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgScatterSeriesOptions<J extends AgScatterSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

@@ -9,6 +9,7 @@ import java.util.List;
  * Chart-level annotations options for AG Charts 12.2.0.
  * 
  * Defines annotations such as lines, text labels, and shapes overlaid on the chart.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartAnnotationsOptions<J extends AgChartAnnotationsOptions<J>> extends JavaScriptPart<J> {

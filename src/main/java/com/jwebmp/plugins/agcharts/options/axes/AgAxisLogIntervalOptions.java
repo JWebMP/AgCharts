@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Interval options for Log axes. Step controls exponent increments.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisLogIntervalOptions<J extends AgAxisLogIntervalOptions<J>> extends JavaScriptPart<J> {

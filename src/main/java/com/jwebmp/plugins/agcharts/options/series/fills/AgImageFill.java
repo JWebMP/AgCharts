@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Image fill configuration. type should be 'image'.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgImageFill<J extends AgImageFill<J>> extends JavaScriptPart<J> {

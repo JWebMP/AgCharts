@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Cross Line options for axes (Cartesian and Polar compatible).
  * Supports both line and range cross-lines with styling and labels.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgCartesianCrossLineOptions<J extends AgCartesianCrossLineOptions<J>> extends JavaScriptPart<J> {

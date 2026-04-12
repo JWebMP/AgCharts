@@ -9,6 +9,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  *
  * Supports either simple text via {@code text}, or a fully custom renderer via {@code renderer}.
  * The renderer may return an HTML string or a DOM Node/Element and is provided as raw JavaScript.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartOverlayOptions<J extends AgChartOverlayOptions<J>> extends JavaScriptPart<J> {

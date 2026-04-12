@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Title options for Pie series (series-level title rendered within chart area).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgPieTitleOptions<J extends AgPieTitleOptions<J>> extends JavaScriptPart<J> {

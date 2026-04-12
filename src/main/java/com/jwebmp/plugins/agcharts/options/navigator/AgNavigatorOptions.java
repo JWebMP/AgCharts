@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Navigator options (Enterprise): enables zoom/pan with optional Mini Chart.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgNavigatorOptions<J extends AgNavigatorOptions<J>> extends JavaScriptPart<J>

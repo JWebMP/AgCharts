@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Minimal series listeners, exposing node click events.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesListeners<J extends AgSeriesListeners<J>> extends JavaScriptPart<J> {

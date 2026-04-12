@@ -10,6 +10,7 @@ import java.util.List;
  *
  * Supports multiple overlaid or stacked area series with configurable interpolation,
  * markers, labels, shadow, and styling. Aligns with the documented AgAreaSeriesOptions API.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAreaSeriesOptions<J extends AgAreaSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

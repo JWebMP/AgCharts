@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * Grouped Category Axis options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGroupedCategoryAxisOptions<J extends AgGroupedCategoryAxisOptions<J>> extends AgCategoryAxisOptions<J> {

@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Options for the Navigator's visible range mask.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgNavigatorMaskOptions<J extends AgNavigatorMaskOptions<J>> extends JavaScriptPart<J>

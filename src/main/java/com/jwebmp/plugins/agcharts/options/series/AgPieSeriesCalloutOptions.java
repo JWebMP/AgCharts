@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Callout line options used with Pie callout labels.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgPieSeriesCalloutOptions<J extends AgPieSeriesCalloutOptions<J>> extends JavaScriptPart<J> {

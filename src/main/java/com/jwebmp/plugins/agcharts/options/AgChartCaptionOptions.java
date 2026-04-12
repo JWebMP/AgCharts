@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * Chart caption options for title, subtitle and footnote.
  * Supports spacing and basic font styling.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartCaptionOptions<J extends AgChartCaptionOptions<J>> extends JavaScriptPart<J> {

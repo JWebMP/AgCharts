@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Gradient Legend options for Enterprise series like Heatmap.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGradientLegendOptions<J extends AgGradientLegendOptions<J>> extends JavaScriptPart<J>

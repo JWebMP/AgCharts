@@ -15,6 +15,7 @@ import java.util.Map;
  * AG_CHARTS_LOCALE_FR_FR from the 'ag-charts-locale' package).
  *
  * A {@code getLocaleText} callback can be used to integrate external i18n frameworks.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgLocaleOptions<J extends AgLocaleOptions<J>> extends JavaScriptPart<J> {

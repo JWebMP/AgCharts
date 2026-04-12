@@ -13,6 +13,7 @@ import com.jwebmp.plugins.agcharts.options.tooltip.AgSeriesTooltipOptions;
  *
  * This class is intentionally minimal; concrete series (e.g., line, bar) can extend this and
  * add their specific properties as needed. The primary goal here is to expose Styler hooks.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesBaseOptions<J extends AgSeriesBaseOptions<J>> extends JavaScriptPart<J> {

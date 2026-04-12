@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Represents a single inner label line displayed in the centre of a Donut series.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutInnerLabel<J extends AgDonutInnerLabel<J>> extends JavaScriptPart<J> {

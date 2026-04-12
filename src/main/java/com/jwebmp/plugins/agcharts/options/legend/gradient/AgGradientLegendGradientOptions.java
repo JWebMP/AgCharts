@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Gradient bar dimension options inside the Gradient Legend.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGradientLegendGradientOptions<J extends AgGradientLegendGradientOptions<J>> extends JavaScriptPart<J>

@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Common axis options shared by all cartesian axis types.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisBaseOptions<J extends AgAxisBaseOptions<J>> extends JavaScriptPart<J> {

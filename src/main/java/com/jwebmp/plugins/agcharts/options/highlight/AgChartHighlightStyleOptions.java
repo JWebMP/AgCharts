@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Highlight style configuration for chart-level highlighting.
  * 
  * Defines fill, stroke, and opacity changes when items/series are highlighted.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartHighlightStyleOptions<J extends AgChartHighlightStyleOptions<J>> extends JavaScriptPart<J> {

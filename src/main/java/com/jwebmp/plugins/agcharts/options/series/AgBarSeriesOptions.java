@@ -10,6 +10,7 @@ import java.util.List;
  * Bar Series options for AG Charts (community).
  *
  * Covers grouping, stacking, normalisation, direction, labels, error bars, and styling.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgBarSeriesOptions<J extends AgBarSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

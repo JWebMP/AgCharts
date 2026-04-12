@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Gradient fill configuration for series or markers.
  * type should be 'gradient'.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGradientColor<J extends AgGradientColor<J>> extends JavaScriptPart<J> {

@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Touch input options for AG Charts 12.2.0.
  * 
  * Controls touch gesture support including pan, zoom, and long-press.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartTouchOptions<J extends AgChartTouchOptions<J>> extends JavaScriptPart<J> {

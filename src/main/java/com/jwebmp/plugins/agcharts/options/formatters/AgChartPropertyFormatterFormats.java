@@ -9,6 +9,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Examples:
  *  - Time: "%b %Y"
  *  - Number: "$#{0>6.2f}"
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartPropertyFormatterFormats<J extends AgChartPropertyFormatterFormats<J>> extends JavaScriptPart<J>

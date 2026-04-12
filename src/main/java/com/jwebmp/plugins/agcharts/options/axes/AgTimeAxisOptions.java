@@ -6,6 +6,7 @@ import java.util.Date;
 
 /**
  * Continuous Time Axis options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgTimeAxisOptions<J extends AgTimeAxisOptions<J>> extends AgAxisBaseOptions<J> {

@@ -6,6 +6,7 @@ import java.util.Date;
 
 /**
  * Unit Time Axis options - allocates a band per unit (e.g., per day/month).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgUnitTimeAxisOptions<J extends AgUnitTimeAxisOptions<J>> extends AgAxisBaseOptions<J> {

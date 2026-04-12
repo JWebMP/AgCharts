@@ -10,6 +10,7 @@ import java.util.List;
  *
  * Covers x/y keys, stacking/normalisation, names, marker, interpolation, labels, tooltip,
  * connecting missing data, highlighting, segmentation, and stroke styling.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgLineSeriesOptions<J extends AgLineSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

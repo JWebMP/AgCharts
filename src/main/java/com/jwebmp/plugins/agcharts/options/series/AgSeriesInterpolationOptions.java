@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Interpolation options for series that draw continuous lines.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesInterpolationOptions<J extends AgSeriesInterpolationOptions<J>> extends JavaScriptPart<J> {

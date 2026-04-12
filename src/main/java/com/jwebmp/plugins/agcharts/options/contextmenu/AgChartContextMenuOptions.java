@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Context menu options for AG Charts 12.2.0.
  * 
  * Configures right-click context menu behavior, including custom items and actions.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartContextMenuOptions<J extends AgChartContextMenuOptions<J>> extends JavaScriptPart<J> {

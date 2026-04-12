@@ -10,6 +10,7 @@ import java.util.List;
  * Applies to either a single item (e.g., hovered marker) or a whole series when highlighted/unhighlighted.
  *
  * Only the specified properties are applied; unspecified ones fall back to the series defaults.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesHighlightStyleOptions<J extends AgSeriesHighlightStyleOptions<J>> extends JavaScriptPart<J> {

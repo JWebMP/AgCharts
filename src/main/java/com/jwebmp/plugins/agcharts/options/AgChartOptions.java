@@ -41,6 +41,7 @@ import java.util.List;
  * All properties are optional and follow CRTP fluent setters for builder-like syntax.
  * <p>
  * Minimum supported version: AG Charts 13.0.0. No backwards compatibility with earlier versions.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, getterVisibility = JsonAutoDetect.Visibility.NONE, setterVisibility = JsonAutoDetect.Visibility.NONE)

@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Interval configuration for Category/Grouped Category axes.
  * Supports step, explicit values, responsive spacing, and placement.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisCategoryIntervalOptions<J extends AgAxisCategoryIntervalOptions<J>> extends JavaScriptPart<J> {

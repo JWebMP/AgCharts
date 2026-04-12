@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level highlight options for AG Charts 12.2.0.
  * 
  * Controls the appearance of highlighted/unhighlighted items and series across the entire chart.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartHighlightOptions<J extends AgChartHighlightOptions<J>> extends JavaScriptPart<J> {

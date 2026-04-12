@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * Represents a single colour stop within a gradient fill.
  * colour: CSS colour string; stop: ratio 0..1 position along the gradient.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGradientColorStop<J extends AgGradientColorStop<J>> extends JavaScriptPart<J> {

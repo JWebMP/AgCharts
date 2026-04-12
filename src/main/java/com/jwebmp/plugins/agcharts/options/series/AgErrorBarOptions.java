@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Minimal Error Bar options for series supporting error bars.
  * Covers most common properties used by AG Charts.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgErrorBarOptions<J extends AgErrorBarOptions<J>> extends JavaScriptPart<J> {

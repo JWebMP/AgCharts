@@ -12,6 +12,7 @@ import java.util.List;
  * Provides an easy way to instantiate a chart with a single Line series, similar
  * to ChartJS convenience wrappers. You can still override getInitialOptions()
  * if you need to customise axes, legend, tooltip, theme, etc.
+  * @param <J> the self-referencing generic type
  */
 public class AgLineChart<J extends AgLineChart<J>> extends AgChart<J>
 {

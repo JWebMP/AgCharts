@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Donut series title options with optional showInLegend.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutTitleOptions<J extends AgDonutTitleOptions<J>> extends JavaScriptPart<J> {

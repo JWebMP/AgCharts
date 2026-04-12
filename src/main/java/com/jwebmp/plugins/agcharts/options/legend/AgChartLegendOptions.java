@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Legend options for AG Charts (community).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendOptions<J extends AgChartLegendOptions<J>> extends JavaScriptPart<J> {

@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Legend event listener callbacks. Provide JS functions as raw strings.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendListeners<J extends AgChartLegendListeners<J>> extends JavaScriptPart<J> {

@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Callout label options for Pie series (labels outside sectors).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgPieSeriesLabelOptions<J extends AgPieSeriesLabelOptions<J>> extends JavaScriptPart<J> {

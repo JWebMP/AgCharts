@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/**
+ * @param <J> the self-referencing generic type
+ */
 public class AgAxisBaseTickOptions<J extends AgAxisBaseTickOptions<J>> extends JavaScriptPart<J> {
     private Boolean enabled;
     private Integer minSpacing;

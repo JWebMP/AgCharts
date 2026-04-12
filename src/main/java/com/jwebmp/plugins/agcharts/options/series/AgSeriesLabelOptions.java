@@ -8,6 +8,7 @@ import com.jwebmp.plugins.agcharts.options.legend.AgPadding;
 
 /**
  * Label options for series with itemStyler support.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesLabelOptions<J extends AgSeriesLabelOptions<J>> extends JavaScriptPart<J> {

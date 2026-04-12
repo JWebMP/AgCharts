@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Generic border options used across chart elements (labels, series area, etc.).
  *
  * Matches AG Charts naming: stroke, strokeWidth, strokeOpacity, with an enabled flag.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgBorderOptions<J extends AgBorderOptions<J>> extends JavaScriptPart<J> {

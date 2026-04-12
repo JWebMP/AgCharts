@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Button style for legend pagination controls.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendPaginationButtonOptions<J extends AgChartLegendPaginationButtonOptions<J>> extends JavaScriptPart<J> {

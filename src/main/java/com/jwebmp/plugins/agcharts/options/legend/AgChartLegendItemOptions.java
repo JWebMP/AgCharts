@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Legend item configuration (marker + label + optional line sample).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendItemOptions<J extends AgChartLegendItemOptions<J>> extends JavaScriptPart<J> {

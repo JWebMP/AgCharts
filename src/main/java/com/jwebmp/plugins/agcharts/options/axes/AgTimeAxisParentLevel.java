@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * Parent level options for time axes. Controls display of parent level ticks/labels
  * (e.g., showing months above days, or years above months).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgTimeAxisParentLevel<J extends AgTimeAxisParentLevel<J>> extends JavaScriptPart<J> {

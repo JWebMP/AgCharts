@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Theme palette configuration: arrays of fills and strokes.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartThemePalette<J extends AgChartThemePalette<J>> extends JavaScriptPart<J> {

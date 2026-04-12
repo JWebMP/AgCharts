@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Options for Navigator drag handles (min/max).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgNavigatorHandleOptions<J extends AgNavigatorHandleOptions<J>> extends JavaScriptPart<J>

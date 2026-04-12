@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 /**
  * Bar series specific label options. Inherits generic label options and
  * acts as a placeholder for any future bar-specific label properties.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgBarSeriesLabelOptions<J extends AgBarSeriesLabelOptions<J>> extends AgSeriesLabelOptions<J> {

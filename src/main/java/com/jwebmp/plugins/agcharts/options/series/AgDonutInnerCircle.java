@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Inner circle configuration (centre area) for a Donut series.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutInnerCircle<J extends AgDonutInnerCircle<J>> extends JavaScriptPart<J> {

@@ -10,6 +10,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * - suppressFieldDotNotation: Disable dot notation in field paths
  * - styleNonce: CSP nonce for inline styles
  * - loadGoogleFonts: Auto-load Google Fonts
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartMiscOptions<J extends AgChartMiscOptions<J>> extends JavaScriptPart<J> {

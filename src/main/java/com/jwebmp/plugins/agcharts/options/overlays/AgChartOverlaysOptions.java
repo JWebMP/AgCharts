@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Aggregates all chart overlays: loading, noData, noVisibleSeries, unsupportedBrowser.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartOverlaysOptions<J extends AgChartOverlaysOptions<J>> extends JavaScriptPart<J> {

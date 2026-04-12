@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 /**
  * Scatter series specific label options. Inherits generic label options and
  * acts as a placeholder for any future scatter-specific label properties.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgScatterSeriesLabelOptions<J extends AgScatterSeriesLabelOptions<J>> extends AgSeriesLabelOptions<J> {

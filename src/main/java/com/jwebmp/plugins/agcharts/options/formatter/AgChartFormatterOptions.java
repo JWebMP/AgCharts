@@ -9,6 +9,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * 
  * Modern replacement for deprecated formatter options. Provides global value formatting
  * for numbers, dates, and other data types across the chart.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartFormatterOptions<J extends AgChartFormatterOptions<J>> extends JavaScriptPart<J> {

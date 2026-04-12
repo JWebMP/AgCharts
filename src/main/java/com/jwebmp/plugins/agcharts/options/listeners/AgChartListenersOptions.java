@@ -8,6 +8,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level event listeners for AG Charts 12.2.0.
  * 
  * Defines callback handlers for chart events (click, hover, selection, etc.).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartListenersOptions<J extends AgChartListenersOptions<J>> extends JavaScriptPart<J> {

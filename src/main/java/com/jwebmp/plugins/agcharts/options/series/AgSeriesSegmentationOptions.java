@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Segmentation options for a series. Defines the axis key and the list of style segments.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesSegmentationOptions<J extends AgSeriesSegmentationOptions<J>> extends JavaScriptPart<J> {

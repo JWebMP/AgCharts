@@ -8,6 +8,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Per-property formatter callbacks (as raw JS functions) for the chart-level formatter.
  * Each field should be set to a JavaScript function string, e.g.:
  * <pre>"function(p){ return p.value + '%'; }"</pre>
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartPropertyFormatterFunctions<J extends AgChartPropertyFormatterFunctions<J>> extends JavaScriptPart<J>

@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Legend line sample (series stroke) options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendItemLineOptions<J extends AgChartLegendItemLineOptions<J>> extends JavaScriptPart<J> {

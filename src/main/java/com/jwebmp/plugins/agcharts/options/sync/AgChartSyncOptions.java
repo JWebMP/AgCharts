@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level sync options for AG Charts 12.2.0.
  * 
  * Enables synchronization of tooltips, highlights, and selections across multiple charts.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartSyncOptions<J extends AgChartSyncOptions<J>> extends JavaScriptPart<J> {

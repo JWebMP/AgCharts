@@ -12,11 +12,12 @@ import java.util.List;
 /**
  * Convenience Combination Chart component.
  *
- * Mirrors the ChartJS-style component approach and allows combining heterogeneous
+ * <p>Mirrors the ChartJS-style component approach and allows combining heterogeneous
  * series types (bar, line, area, scatter, bubble) in a single chart. You can also
- * provide axis configurations (e.g., set a secondary axis and link via axis.keys).
+ * provide axis configurations (e.g., set a secondary axis and link via axis.keys).</p>
  *
- * Example usage:
+ * <p>Example usage:</p>
+ * <pre>{@code
  *   AgCombinationChart chart = new AgCombinationChart("salesCombo")
  *       .addSeries(new AgBarSeriesOptions<>()
  *           .setXKey("year").setYKey("men"))
@@ -26,7 +27,9 @@ import java.util.List;
  *       .setCategory(new AgCategoryAxisOptions<>().setPosition(AgCartesianAxisPosition.BOTTOM))
  *       .setNumber(new AgNumberAxisOptions<>().setPosition(AgCartesianAxisPosition.LEFT).setKeys(List.of("men")));
  *   // Additional axes can be configured similarly.
- * </code>
+ * }</pre>
+ *
+ * @param <J> the self-referencing generic type
  */
 public class AgCombinationChart<J extends AgCombinationChart<J>> extends AgChart<J>
 {

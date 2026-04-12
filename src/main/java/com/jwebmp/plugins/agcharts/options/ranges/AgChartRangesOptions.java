@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level ranges options for AG Charts 12.2.0.
  * 
  * Defines range buttons and selectors for axis/data filtering and selection UI.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartRangesOptions<J extends AgChartRangesOptions<J>> extends JavaScriptPart<J> {

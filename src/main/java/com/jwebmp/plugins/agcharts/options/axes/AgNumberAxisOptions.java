@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
  * Number Axis options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgNumberAxisOptions<J extends AgNumberAxisOptions<J>> extends AgAxisBaseOptions<J> {

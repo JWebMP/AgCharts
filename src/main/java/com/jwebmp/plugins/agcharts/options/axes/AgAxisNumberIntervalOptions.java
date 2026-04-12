@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Interval options for Number axes.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisNumberIntervalOptions<J extends AgAxisNumberIntervalOptions<J>> extends JavaScriptPart<J> {

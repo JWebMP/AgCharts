@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Style configuration for individual grid lines and the band between them.
  * Used by AgAxisGridLineOptions.style[].
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisGridStyle<J extends AgAxisGridStyle<J>> extends JavaScriptPart<J> {

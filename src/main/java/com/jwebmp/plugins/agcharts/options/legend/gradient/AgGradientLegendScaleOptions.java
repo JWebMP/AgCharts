@@ -6,6 +6,7 @@ import com.jwebmp.plugins.agcharts.options.series.AgSeriesLabelOptions;
 
 /**
  * Scale options for Gradient Legend, including label formatting and padding.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgGradientLegendScaleOptions<J extends AgGradientLegendScaleOptions<J>> extends JavaScriptPart<J>

@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level animation options for AG Charts 12.2.0.
  * 
  * Controls animation duration, easing, and behavior across chart updates and initial rendering.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartAnimationOptions<J extends AgChartAnimationOptions<J>> extends JavaScriptPart<J> {

@@ -9,6 +9,7 @@ import java.util.List;
  * Chart-level data options for AG Charts 12.2.0.
  * 
  * Defines chart-level data binding and source configuration.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartDataOptions<J extends AgChartDataOptions<J>> extends JavaScriptPart<J> {

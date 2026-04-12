@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Data source options for AG Charts 12.2.0.
  * 
  * Configures data binding adapters and remote data source behavior.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartDataSourceOptions<J extends AgChartDataSourceOptions<J>> extends JavaScriptPart<J> {

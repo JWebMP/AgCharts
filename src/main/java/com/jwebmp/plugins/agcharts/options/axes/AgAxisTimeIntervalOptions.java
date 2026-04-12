@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * Interval options for Time axes.
  * Supports step as either AgTimeIntervalUnit or AgTimeInterval object.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgAxisTimeIntervalOptions<J extends AgAxisTimeIntervalOptions<J>> extends JavaScriptPart<J> {

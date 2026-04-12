@@ -6,6 +6,7 @@ import com.jwebmp.plugins.agcharts.options.series.AgSeriesLabelOptions;
 
 /**
  * Mini Chart options inside the Navigator.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgNavigatorMiniChartOptions<J extends AgNavigatorMiniChartOptions<J>> extends JavaScriptPart<J>

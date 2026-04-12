@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Sector label options for Donut series (labels inside sectors).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutSeriesSectorLabelOptions<J extends AgDonutSeriesSectorLabelOptions<J>> extends JavaScriptPart<J> {

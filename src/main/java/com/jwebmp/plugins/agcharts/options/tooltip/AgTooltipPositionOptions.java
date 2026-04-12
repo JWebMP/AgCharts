@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Tooltip position options: anchor target, placement(s) and pixel offsets.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgTooltipPositionOptions<J extends AgTooltipPositionOptions<J>> extends JavaScriptPart<J> {

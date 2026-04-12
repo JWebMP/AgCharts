@@ -16,6 +16,7 @@ import java.util.List;
  *  - stop:  axis value where the segment styling stops (exclusive). Omit for axis/domain maximum or next start.
  *
  * Style properties mirror series options; unspecified properties fall back to the series defaults.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesShapeSegmentOptions<J extends AgSeriesShapeSegmentOptions<J>> extends JavaScriptPart<J> {

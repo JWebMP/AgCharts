@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Interaction options for tooltips (e.g., enabling link clicks and text selection).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgTooltipInteractionOptions<J extends AgTooltipInteractionOptions<J>> extends JavaScriptPart<J> {

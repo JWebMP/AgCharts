@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Background options for AG Charts (community).
  *
  * Controls the chart background visibility and fill color.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartBackground<J extends AgChartBackground<J>> extends JavaScriptPart<J> {

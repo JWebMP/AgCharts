@@ -136,6 +136,9 @@ import java.util.Set;
         """)
 
 
+/**
+ * @param <J> the self-referencing generic type
+ */
 public abstract class AgChart<J extends AgChart<J>> extends DivSimple<J> implements INgComponent<J>
 {
     private NgIf ngIfWrapper;

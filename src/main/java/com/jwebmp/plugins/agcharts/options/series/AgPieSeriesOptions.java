@@ -11,6 +11,7 @@ import java.util.List;
  *
  * Supports angle and optional radius keys, callout/sector labels, callout line,
  * title, colors arrays, per-sector styling, spacing and corner radius.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgPieSeriesOptions<J extends AgPieSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

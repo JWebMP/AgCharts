@@ -7,6 +7,9 @@ import com.jwebmp.plugins.agcharts.options.AgBorderOptions;
 import com.jwebmp.plugins.agcharts.options.legend.AgPadding;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/**
+ * @param <J> the self-referencing generic type
+ */
 public class AgBaseCartesianAxisLabelOptions<J extends AgBaseCartesianAxisLabelOptions<J>> extends JavaScriptPart<J> {
     private Boolean enabled;
     private Integer fontSize;

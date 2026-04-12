@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Keyboard input options for AG Charts 12.2.0.
  * 
  * Controls keyboard interaction support including navigation and shortcuts.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartKeyboardOptions<J extends AgChartKeyboardOptions<J>> extends JavaScriptPart<J> {

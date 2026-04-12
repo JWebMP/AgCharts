@@ -12,6 +12,7 @@ import java.util.List;
  *
  * Mirrors the Pie/Donut API: supports angle and optional radius keys, inner labels/circle,
  * inner/outer radius ratios and offsets, multi-series layout via ratios, and styling.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDonutSeriesOptions<J extends AgDonutSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

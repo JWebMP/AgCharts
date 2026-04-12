@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Initial state options for AG Charts 12.2.0.
  * 
  * Defines chart initial state including zoom/pan position and selections.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartInitialStateOptions<J extends AgChartInitialStateOptions<J>> extends JavaScriptPart<J> {

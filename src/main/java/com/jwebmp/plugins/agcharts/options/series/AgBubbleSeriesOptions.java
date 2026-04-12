@@ -12,6 +12,7 @@ import java.util.List;
  * Extends the scatter-like capabilities by introducing sizeKey to encode
  * the third numeric variable as marker size. Supports manual size domain,
  * min/max marker size, and series-level marker styling.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgBubbleSeriesOptions<J extends AgBubbleSeriesOptions<J>> extends AgSeriesBaseOptions<J> {

@@ -7,6 +7,7 @@ import com.jwebmp.plugins.agcharts.options.legend.AgPadding;
 /**
  * Series Area options - applies to the chart's series area container.
  * Supports drawing a border around the series area, corner radius, and padding.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesAreaOptions<J extends AgSeriesAreaOptions<J>> extends JavaScriptPart<J> {

@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Series-level tooltip options. Can override chart-level defaults.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesTooltipOptions<J extends AgSeriesTooltipOptions<J>> extends JavaScriptPart<J> {

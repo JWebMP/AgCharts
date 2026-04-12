@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Legend marker options overriding series-derived marker look if desired.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendItemMarkerOptions<J extends AgChartLegendItemMarkerOptions<J>> extends JavaScriptPart<J> {

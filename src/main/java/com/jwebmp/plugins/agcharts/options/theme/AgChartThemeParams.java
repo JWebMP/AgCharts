@@ -8,6 +8,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  *
  * This class includes common parameters used in AG Charts themes. Additional parameters
  * may be added later as needed.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartThemeParams<J extends AgChartThemeParams<J>> extends JavaScriptPart<J> {

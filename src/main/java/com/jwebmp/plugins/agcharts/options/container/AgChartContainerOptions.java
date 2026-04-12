@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Container options for AG Charts 12.2.0.
  * 
  * Defines chart container element configuration and behavior.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartContainerOptions<J extends AgChartContainerOptions<J>> extends JavaScriptPart<J> {

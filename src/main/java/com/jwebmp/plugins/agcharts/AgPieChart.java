@@ -12,6 +12,7 @@ import java.util.List;
  * Provides an easy way to instantiate a chart with a single Pie series, similar
  * to other ChartJS-style convenience wrappers. You can still override getInitialOptions()
  * if you need to customise legend, tooltip, theme, etc.
+  * @param <J> the self-referencing generic type
  */
 public class AgPieChart<J extends AgPieChart<J>> extends AgChart<J>
 {

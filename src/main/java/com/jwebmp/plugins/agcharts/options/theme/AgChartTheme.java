@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Chart theme options wrapper with support for baseTheme, palette, params and overrides.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartTheme<J extends AgChartTheme<J>> extends JavaScriptPart<J> {

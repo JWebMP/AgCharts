@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Chart-level zoom options for AG Charts 12.2.0.
  * 
  * Controls zoom and pan interactions, including keyboard/mouse modifiers and behavior.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartZoomOptions<J extends AgChartZoomOptions<J>> extends JavaScriptPart<J> {

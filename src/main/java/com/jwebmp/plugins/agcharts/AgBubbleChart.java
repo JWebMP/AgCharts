@@ -10,6 +10,7 @@ import java.util.List;
  * Convenience Bubble Chart component.
  *
  * Provides an easy way to instantiate a chart with a single Bubble series.
+  * @param <J> the self-referencing generic type
  */
 public class AgBubbleChart<J extends AgBubbleChart<J>> extends AgChart<J>
 {

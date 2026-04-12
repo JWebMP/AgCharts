@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
  * Logarithmic Axis options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgLogAxisOptions<J extends AgLogAxisOptions<J>> extends AgAxisBaseOptions<J> {

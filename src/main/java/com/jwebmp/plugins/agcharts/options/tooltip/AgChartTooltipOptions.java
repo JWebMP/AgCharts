@@ -6,6 +6,7 @@ import com.jwebmp.plugins.agcharts.options.axes.AgAxisLabelWrapping;
 
 /**
  * Chart-level tooltip options. Used unless overridden by series-level options.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartTooltipOptions<J extends AgChartTooltipOptions<J>> extends JavaScriptPart<J> {

@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Label options for Cross Lines (Cartesian and Polar).
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgCartesianCrossLineLabelOptions<J extends AgCartesianCrossLineLabelOptions<J>> extends JavaScriptPart<J> {

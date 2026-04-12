@@ -7,6 +7,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * Flexible legend position object allowing floating and pixel offsets.
  * Example:
  * { placement: 'right-top', floating: true, xOffset: -50, yOffset: 75 }
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartLegendPositionOptions<J extends AgChartLegendPositionOptions<J>> extends JavaScriptPart<J> {

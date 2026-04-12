@@ -6,6 +6,7 @@ import java.util.Date;
 
 /**
  * Ordinal Time Axis options - only provided values are shown.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgOrdinalTimeAxisOptions<J extends AgOrdinalTimeAxisOptions<J>> extends AgAxisBaseOptions<J> {

@@ -6,6 +6,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * Pattern fill configuration supporting stock patterns or custom SVG path.
  * type should be 'pattern'.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgPatternFill<J extends AgPatternFill<J>> extends JavaScriptPart<J> {
@@ -14,7 +15,7 @@ public class AgPatternFill<J extends AgPatternFill<J>> extends JavaScriptPart<J>
     /** Name of stock pattern e.g., 'vertical-lines', 'stars', etc. */
     private String pattern;
 
-    /** Custom SVG path data string (value of the <path d="..."> attribute). */
+    /** Custom SVG path data string (value of the {@code <path d="...">} attribute). */
     private String path;
 
     /** Stroke colour of the pattern path/lines. */

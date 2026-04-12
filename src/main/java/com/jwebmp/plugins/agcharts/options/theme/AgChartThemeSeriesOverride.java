@@ -7,6 +7,7 @@ import com.jwebmp.plugins.agcharts.options.series.AgSeriesLabelOptions;
 
 /**
  * Series-level override container supporting a 'styler' callback.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgChartThemeSeriesOverride<J extends AgChartThemeSeriesOverride<J>> extends JavaScriptPart<J> {

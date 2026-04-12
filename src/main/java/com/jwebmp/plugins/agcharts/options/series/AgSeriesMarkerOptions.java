@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * Marker options with per-item itemStyler support and full API coverage.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesMarkerOptions<J extends AgSeriesMarkerOptions<J>> extends JavaScriptPart<J> {

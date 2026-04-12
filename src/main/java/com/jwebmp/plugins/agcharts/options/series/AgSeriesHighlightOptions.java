@@ -8,6 +8,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  *
  * Configure how items and series appear when hovered (highlighted) or dimmed (unhighlighted).
  * Includes a bringToFront option to render the highlighted series above others.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgSeriesHighlightOptions<J extends AgSeriesHighlightOptions<J>> extends JavaScriptPart<J> {

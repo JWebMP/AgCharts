@@ -5,6 +5,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Drop shadow options used behind series shapes.
+  * @param <J> the self-referencing generic type
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AgDropShadowOptions<J extends AgDropShadowOptions<J>> extends JavaScriptPart<J> {
