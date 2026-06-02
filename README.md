@@ -24,7 +24,7 @@ Built on [AG Charts 13.1.0](https://charts.ag-grid.com/) · [Angular 21](https:/
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>agcharts</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
